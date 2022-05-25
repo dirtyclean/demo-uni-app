@@ -2,7 +2,7 @@
 	<view class="content">
 		<view>简介</view>
 		<!--display-multiple-items同时显示的滑块数量  -->
-		<swiper class="swiperView" display-multiple-items='5' :current="currentCityIndex" @change="cityChange">
+		<swiper class="swiperView" :display-multiple-items='swiperItemNumber' :current="currentCityIndex" @change="cityChange">
 			<swiper-item>
 				<view class="block"></view>
 			</swiper-item>
@@ -22,7 +22,7 @@
 				<view class="block"></view>
 			</swiper-item>
 		</swiper>
-		<swiper class="swiperView" display-multiple-items='5' :current="currentCountyIndex" @change="countyChange">
+		<swiper class="swiperView" :display-multiple-items='swiperItemNumber' :current="currentCountyIndex" @change="countyChange">
 			<swiper-item>
 				<view class="block"></view>
 			</swiper-item>
@@ -43,23 +43,27 @@
 			</swiper-item>
 		</swiper>
 		<view class="chart-box">
-			<view class="chart-line"
-				:style="`margin-top: ${pxtorpx(lineMarginTop)}rpx;height:${pxtorpx(lineHeight)}rpx`"
-				v-for="(item, index) in YData" :key="index">
-				<text class="chart-line-text">{{item}}</text>
-				<view class="chart-line-y" :style="`height: ${pxtorpx(lineBorderHeight)}rpx`"></view>
+			<view class="chart-line-box">
+				<view class="chart-line"
+					:style="`margin-top: ${pxtorpx(lineMarginTop)}rpx;height:${pxtorpx(lineHeight)}rpx`"
+					v-for="(item, index) in YData" :key="index">
+					<text class="chart-line-text">{{item}}</text>
+					<view class="chart-line-y" :style="`height: ${pxtorpx(lineBorderHeight)}rpx`"></view>
+				</view>
 			</view>
-			<view class="chart-bar" :style="`bottom:${(pxtorpx(lineHeight/2) - pxtorpx(chartXTextHeight)) - pxtorpx(lineBorderHeight)/2}rpx;`">
-				<swiper display-multiple-items='5' @change="barChange" :current="currBarIndex">
+			<view class="chart-bar" :style="`bottom:${(pxtorpx(lineHeight/2) - pxtorpx(chartXTextHeight))}rpx;`">
+				<swiper :display-multiple-items='swiperItemNumber' @change="barChange" :current="currBarIndex">
 					<swiper-item v-for="(item,index) in chartData" :key="item.area" @click="clickBarItem(item, index)">
 						<view class="chart-bar-content"
 							:class="{'chart-bar-content-actived': currSelectedBar === index}">
 							<text class="chart-bar-text">{{item.value1+item.value2}}</text>
 							<view
-								:style="`height: ${(pxtorpx(lineMarginTop+lineHeight)*item.value1)/gap}rpx;width:30rpx;background:green`">
+								class="chart-bar-top"
+								:style="`height: ${(pxtorpx(lineMarginTop+lineHeight)*item.value1)/gap}rpx;`">
 							</view>
 							<view
-								:style="`height: ${(pxtorpx(lineMarginTop+lineHeight)*item.value2)/gap}rpx;width:30rpx;background:#FF7442`">
+								class="chart-bar-bottom"
+								:style="`height: ${(pxtorpx(lineMarginTop+lineHeight)*item.value2)/gap}rpx;`">
 							</view>
 							<view class="chart-x-text"
 								:style="`font-size: ${pxtorpx(chartXTextSize)}rpx;height: ${pxtorpx(chartXTextHeight)}rpx;line-height: ${pxtorpx(chartXTextHeight)}rpx`">
@@ -73,9 +77,9 @@
 		</view>
 		<view class="slider-box">
 			<slider :value="currBarIndex" block-size="15" activeColor="#FFCC33" backgroundColor="#DAEAFF" :step="1"
-				:max="1*(chartData.length - 5)" :min="0" @change="sliderChange" />
+				:max="1*(chartData.length - swiperItemNumber)" :min="0" @change="sliderChange" />
 		</view>
-		{{chartData.length-5}}
+		{{chartData.length-swiperItemNumber}}
 		<custom-tabbar :current-page="0"></custom-tabbar>
 	</view>
 </template>
@@ -85,6 +89,7 @@
 		data() {
 			const chartXTextSize = 12
 			return {
+				swiperItemNumber: 5,
 				currentCityIndex: 0,
 				currentCountyIndex: 0,
 				cityList: ['成都市', '绵阳市', '简阳市', '德阳市', '自贡市', '眉山市', '广安市', '广元市', '遂宁市'],
@@ -130,8 +135,8 @@
 				gap: 0,
 				chartXTextHeight: chartXTextSize + 2,
 				chartXTextSize,
-				lineMarginTop: 19,
-				lineHeight: 15,
+				lineMarginTop: 18,
+				lineHeight: 16,
 				lineBorderHeight: 1,
 				currBarIndex: 0,
 				currSelectedBar: 0,
@@ -149,7 +154,7 @@
 				this.currBarIndex = event.detail.value
 			},
 			clickBarItem(item, index) {
-				if (index <= (this.chartData.length - 5)) {
+				if (index <= (this.chartData.length - this.swiperItemNumber)) {
 					this.currBarIndex = index
 				}
 				this.currSelectedBar = index
@@ -248,7 +253,7 @@
 		height: 100%;
 		position: absolute;
 		width: 80%;
-		left: 105rpx;
+		left: 100rpx;
 	}
 
 	.chart-bar uni-swiper-item {
@@ -263,16 +268,25 @@
 		align-items: center;
 		flex-direction: column;
 	}
-
+	.chart-bar-top {
+		width: 30rpx;
+		background: #ff7442;
+		border-radius: 10rpx 10rpx 0px 0px;
+		box-shadow: 0px 0px 8rpx 0px #ff7442; 
+	}
+	.chart-bar-bottom {
+		width: 30rpx;
+		background: #ffcd00;
+		border-radius: 0px 0px 10rpx 10rpx;
+		box-shadow: 0px 0px 8rpx 0px #ffcd00; 
+	}
 	.chart-bar-content-actived:nth-child(1) {
-		transform: translateX(4rpx);
+		transform: translateX(4rpx) translateY(-4rpx);
 	}
 
 	.chart-bar-content-actived .chart-x-text {
 		width: 95%;
 		text-align: center;
-		/* border-radius: 20rpx;
-		border-bottom: 2rpx solid #c2cedfad; */
 	}
 
 	.chart-bar-content-actived {
@@ -285,21 +299,24 @@
 		height: 100%;
 		overflow: unset;
 	}
-
+	.chart-line-box {
+	}
 	.chart-line {
 		display: flex;
 		align-items: center;
 	}
 
 	.chart-line-y {
-		width: 80%;
-		background-color: blue;
+		width: 92%;
+		background-color: #CEE3FF;
 	}
 
 	.chart-line-text {
 		text-align: right;
-		width: 90rpx;
+		width: 40rpx;
 		margin-right: 10rpx;
+		color: #c2cedf;
+		font-size: 16rpx;
 	}
 
 	.chart-bar-text {

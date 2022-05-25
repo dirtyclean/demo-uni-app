@@ -1,8 +1,8 @@
 (this["webpackJsonp"] = this["webpackJsonp"] || []).push([["app-service"],[
 /* 0 */
-/*!****************************************!*\
-  !*** D:/Projects/my/customBar/main.js ***!
-  \****************************************/
+/*!*******************************************!*\
+  !*** D:/Projects/my/demo-uni-app/main.js ***!
+  \*******************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -11,9 +11,9 @@ eval("__webpack_require__(/*! uni-pages */ 1);var _index = _interopRequireDefaul
 
 /***/ }),
 /* 1 */
-/*!*******************************************!*\
-  !*** D:/Projects/my/customBar/pages.json ***!
-  \*******************************************/
+/*!**********************************************!*\
+  !*** D:/Projects/my/demo-uni-app/pages.json ***!
+  \**********************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -60,9 +60,9 @@ __definePage('pages/mine/mine', function () {return Vue.extend(__webpack_require
 
 /***/ }),
 /* 2 */
-/*!******************************************************************!*\
-  !*** D:/Projects/my/customBar/pages/index/index.vue?mpType=page ***!
-  \******************************************************************/
+/*!*********************************************************************!*\
+  !*** D:/Projects/my/demo-uni-app/pages/index/index.vue?mpType=page ***!
+  \*********************************************************************/
 /*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -71,9 +71,9 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _ind
 
 /***/ }),
 /* 3 */
-/*!************************************************************************************************!*\
-  !*** D:/Projects/my/customBar/pages/index/index.vue?vue&type=template&id=2be84a3c&mpType=page ***!
-  \************************************************************************************************/
+/*!***************************************************************************************************!*\
+  !*** D:/Projects/my/demo-uni-app/pages/index/index.vue?vue&type=template&id=2be84a3c&mpType=page ***!
+  \***************************************************************************************************/
 /*! exports provided: render, staticRenderFns, recyclableRender, components */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -92,9 +92,9 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 /* 4 */
-/*!****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--10-0!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/filter-modules-template.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/page-meta.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!D:/Projects/my/customBar/pages/index/index.vue?vue&type=template&id=2be84a3c&mpType=page ***!
-  \****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--10-0!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/filter-modules-template.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/page-meta.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!D:/Projects/my/demo-uni-app/pages/index/index.vue?vue&type=template&id=2be84a3c&mpType=page ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns, recyclableRender, components */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -119,6 +119,11 @@ var render = function() {
         {
           staticClass: _vm._$s(2, "sc", "swiperView"),
           attrs: {
+            "display-multiple-items": _vm._$s(
+              2,
+              "a-display-multiple-items",
+              _vm.swiperItemNumber
+            ),
             current: _vm._$s(2, "a-current", _vm.currentCityIndex),
             _i: 2
           },
@@ -195,6 +200,11 @@ var render = function() {
         {
           staticClass: _vm._$s(14, "sc", "swiperView"),
           attrs: {
+            "display-multiple-items": _vm._$s(
+              14,
+              "a-display-multiple-items",
+              _vm.swiperItemNumber
+            ),
             current: _vm._$s(14, "a-current", _vm.currentCountyIndex),
             _i: 14
           },
@@ -270,75 +280,91 @@ var render = function() {
         "view",
         { staticClass: _vm._$s(26, "sc", "chart-box"), attrs: { _i: 26 } },
         [
-          _vm._l(_vm._$s(27, "f", { forItems: _vm.YData }), function(
-            item,
-            index,
-            $22,
-            $32
-          ) {
-            return _c(
-              "view",
-              {
-                key: _vm._$s(27, "f", { forIndex: $22, key: index }),
-                staticClass: _vm._$s("27-" + $32, "sc", "chart-line"),
-                style: _vm._$s(
-                  "27-" + $32,
-                  "s",
-                  "margin-top: " +
-                    _vm.pxtorpx(_vm.lineMarginTop) +
-                    "rpx;height:" +
-                    _vm.pxtorpx(_vm.lineHeight) +
-                    "rpx"
-                ),
-                attrs: { _i: "27-" + $32 }
-              },
-              [
-                _c(
-                  "text",
-                  {
-                    staticClass: _vm._$s("28-" + $32, "sc", "chart-line-text"),
-                    attrs: { _i: "28-" + $32 }
-                  },
-                  [_vm._v(_vm._$s("28-" + $32, "t0-0", _vm._s(item)))]
-                ),
-                _c("view", {
-                  staticClass: _vm._$s("29-" + $32, "sc", "chart-line-y"),
-                  style: _vm._$s(
-                    "29-" + $32,
-                    "s",
-                    "height: " + _vm.pxtorpx(_vm.lineBorderHeight) + "rpx"
-                  ),
-                  attrs: { _i: "29-" + $32 }
-                })
-              ]
-            )
-          }),
           _c(
             "view",
             {
-              staticClass: _vm._$s(30, "sc", "chart-bar"),
+              staticClass: _vm._$s(27, "sc", "chart-line-box"),
+              attrs: { _i: 27 }
+            },
+            _vm._l(_vm._$s(28, "f", { forItems: _vm.YData }), function(
+              item,
+              index,
+              $22,
+              $32
+            ) {
+              return _c(
+                "view",
+                {
+                  key: _vm._$s(28, "f", { forIndex: $22, key: index }),
+                  staticClass: _vm._$s("28-" + $32, "sc", "chart-line"),
+                  style: _vm._$s(
+                    "28-" + $32,
+                    "s",
+                    "margin-top: " +
+                      _vm.pxtorpx(_vm.lineMarginTop) +
+                      "rpx;height:" +
+                      _vm.pxtorpx(_vm.lineHeight) +
+                      "rpx"
+                  ),
+                  attrs: { _i: "28-" + $32 }
+                },
+                [
+                  _c(
+                    "text",
+                    {
+                      staticClass: _vm._$s(
+                        "29-" + $32,
+                        "sc",
+                        "chart-line-text"
+                      ),
+                      attrs: { _i: "29-" + $32 }
+                    },
+                    [_vm._v(_vm._$s("29-" + $32, "t0-0", _vm._s(item)))]
+                  ),
+                  _c("view", {
+                    staticClass: _vm._$s("30-" + $32, "sc", "chart-line-y"),
+                    style: _vm._$s(
+                      "30-" + $32,
+                      "s",
+                      "height: " + _vm.pxtorpx(_vm.lineBorderHeight) + "rpx"
+                    ),
+                    attrs: { _i: "30-" + $32 }
+                  })
+                ]
+              )
+            }),
+            0
+          ),
+          _c(
+            "view",
+            {
+              staticClass: _vm._$s(31, "sc", "chart-bar"),
               style: _vm._$s(
-                30,
+                31,
                 "s",
                 "bottom:" +
                   (_vm.pxtorpx(_vm.lineHeight / 2) -
-                    _vm.pxtorpx(_vm.chartXTextHeight) -
-                    _vm.pxtorpx(_vm.lineBorderHeight) / 2) +
+                    _vm.pxtorpx(_vm.chartXTextHeight)) +
                   "rpx;"
               ),
-              attrs: { _i: 30 }
+              attrs: { _i: 31 }
             },
             [
               _c(
                 "swiper",
                 {
                   attrs: {
-                    current: _vm._$s(31, "a-current", _vm.currBarIndex),
-                    _i: 31
+                    "display-multiple-items": _vm._$s(
+                      32,
+                      "a-display-multiple-items",
+                      _vm.swiperItemNumber
+                    ),
+                    current: _vm._$s(32, "a-current", _vm.currBarIndex),
+                    _i: 32
                   },
                   on: { change: _vm.barChange }
                 },
-                _vm._l(_vm._$s(32, "f", { forItems: _vm.chartData }), function(
+                _vm._l(_vm._$s(33, "f", { forItems: _vm.chartData }), function(
                   item,
                   index,
                   $23,
@@ -347,8 +373,8 @@ var render = function() {
                   return _c(
                     "swiper-item",
                     {
-                      key: _vm._$s(32, "f", { forIndex: $23, key: item.area }),
-                      attrs: { _i: "32-" + $33 },
+                      key: _vm._$s(33, "f", { forIndex: $23, key: item.area }),
+                      attrs: { _i: "33-" + $33 },
                       on: {
                         click: function($event) {
                           return _vm.clickBarItem(item, index)
@@ -360,31 +386,31 @@ var render = function() {
                         "view",
                         {
                           staticClass: _vm._$s(
-                            "33-" + $33,
+                            "34-" + $33,
                             "sc",
                             "chart-bar-content"
                           ),
-                          class: _vm._$s("33-" + $33, "c", {
+                          class: _vm._$s("34-" + $33, "c", {
                             "chart-bar-content-actived":
                               _vm.currSelectedBar === index
                           }),
-                          attrs: { _i: "33-" + $33 }
+                          attrs: { _i: "34-" + $33 }
                         },
                         [
                           _c(
                             "text",
                             {
                               staticClass: _vm._$s(
-                                "34-" + $33,
+                                "35-" + $33,
                                 "sc",
                                 "chart-bar-text"
                               ),
-                              attrs: { _i: "34-" + $33 }
+                              attrs: { _i: "35-" + $33 }
                             },
                             [
                               _vm._v(
                                 _vm._$s(
-                                  "34-" + $33,
+                                  "35-" + $33,
                                   "t0-0",
                                   _vm._s(item.value1 + item.value2)
                                 )
@@ -392,20 +418,11 @@ var render = function() {
                             ]
                           ),
                           _c("view", {
-                            style: _vm._$s(
-                              "35-" + $33,
-                              "s",
-                              "height: " +
-                                (_vm.pxtorpx(
-                                  _vm.lineMarginTop + _vm.lineHeight
-                                ) *
-                                  item.value1) /
-                                  _vm.gap +
-                                "rpx;width:30rpx;background:green"
+                            staticClass: _vm._$s(
+                              "36-" + $33,
+                              "sc",
+                              "chart-bar-top"
                             ),
-                            attrs: { _i: "35-" + $33 }
-                          }),
-                          _c("view", {
                             style: _vm._$s(
                               "36-" + $33,
                               "s",
@@ -413,22 +430,41 @@ var render = function() {
                                 (_vm.pxtorpx(
                                   _vm.lineMarginTop + _vm.lineHeight
                                 ) *
-                                  item.value2) /
+                                  item.value1) /
                                   _vm.gap +
-                                "rpx;width:30rpx;background:#FF7442"
+                                "rpx;"
                             ),
                             attrs: { _i: "36-" + $33 }
+                          }),
+                          _c("view", {
+                            staticClass: _vm._$s(
+                              "37-" + $33,
+                              "sc",
+                              "chart-bar-bottom"
+                            ),
+                            style: _vm._$s(
+                              "37-" + $33,
+                              "s",
+                              "height: " +
+                                (_vm.pxtorpx(
+                                  _vm.lineMarginTop + _vm.lineHeight
+                                ) *
+                                  item.value2) /
+                                  _vm.gap +
+                                "rpx;"
+                            ),
+                            attrs: { _i: "37-" + $33 }
                           }),
                           _c(
                             "view",
                             {
                               staticClass: _vm._$s(
-                                "37-" + $33,
+                                "38-" + $33,
                                 "sc",
                                 "chart-x-text"
                               ),
                               style: _vm._$s(
-                                "37-" + $33,
+                                "38-" + $33,
                                 "s",
                                 "font-size: " +
                                   _vm.pxtorpx(_vm.chartXTextSize) +
@@ -438,17 +474,17 @@ var render = function() {
                                   _vm.pxtorpx(_vm.chartXTextHeight) +
                                   "rpx"
                               ),
-                              attrs: { _i: "37-" + $33 }
+                              attrs: { _i: "38-" + $33 }
                             },
                             [
                               _vm._v(
-                                _vm._$s("37-" + $33, "t0-0", _vm._s(item.area))
+                                _vm._$s("38-" + $33, "t0-0", _vm._s(item.area))
                               )
                             ]
                           ),
                           _c("view", {
-                            staticClass: _vm._$s("38-" + $33, "sc", "test"),
-                            attrs: { _i: "38-" + $33 }
+                            staticClass: _vm._$s("39-" + $33, "sc", "test"),
+                            attrs: { _i: "39-" + $33 }
                           })
                         ]
                       )
@@ -459,25 +495,30 @@ var render = function() {
               )
             ]
           )
-        ],
-        2
+        ]
       ),
       _c(
         "view",
-        { staticClass: _vm._$s(39, "sc", "slider-box"), attrs: { _i: 39 } },
+        { staticClass: _vm._$s(40, "sc", "slider-box"), attrs: { _i: 40 } },
         [
           _c("slider", {
             attrs: {
-              value: _vm._$s(40, "a-value", _vm.currBarIndex),
-              max: _vm._$s(40, "a-max", 1 * (_vm.chartData.length - 5)),
-              _i: 40
+              value: _vm._$s(41, "a-value", _vm.currBarIndex),
+              max: _vm._$s(
+                41,
+                "a-max",
+                1 * (_vm.chartData.length - _vm.swiperItemNumber)
+              ),
+              _i: 41
             },
             on: { change: _vm.sliderChange }
           })
         ]
       ),
-      _vm._v(_vm._$s(0, "t5-0", _vm._s(_vm.chartData.length - 5))),
-      _c("custom-tabbar", { attrs: { "current-page": 0, _i: 41 } })
+      _vm._v(
+        _vm._$s(0, "t5-0", _vm._s(_vm.chartData.length - _vm.swiperItemNumber))
+      ),
+      _c("custom-tabbar", { attrs: { "current-page": 0, _i: 42 } })
     ],
     1
   )
@@ -490,9 +531,9 @@ render._withStripped = true
 
 /***/ }),
 /* 5 */
-/*!******************************************************************************************!*\
-  !*** D:/Projects/my/customBar/pages/index/index.vue?vue&type=script&lang=js&mpType=page ***!
-  \******************************************************************************************/
+/*!*********************************************************************************************!*\
+  !*** D:/Projects/my/demo-uni-app/pages/index/index.vue?vue&type=script&lang=js&mpType=page ***!
+  \*********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -501,14 +542,14 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _Pro
 
 /***/ }),
 /* 6 */
-/*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--6-1!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/using-components.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!D:/Projects/my/customBar/pages/index/index.vue?vue&type=script&lang=js&mpType=page ***!
-  \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--6-1!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/using-components.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!D:/Projects/my/demo-uni-app/pages/index/index.vue?vue&type=script&lang=js&mpType=page ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("/* WEBPACK VAR INJECTION */(function(__f__) {Object.defineProperty(exports, \"__esModule\", { value: true });exports.default = void 0; //\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\nvar _default =\n{\n  data: function data() {\n    var chartXTextSize = 12;\n    return {\n      currentCityIndex: 0,\n      currentCountyIndex: 0,\n      cityList: ['成都市', '绵阳市', '简阳市', '德阳市', '自贡市', '眉山市', '广安市', '广元市', '遂宁市'],\n      countyList: ['金牛区', '武侯区', '双流区', '成华区', '高新区', '青羊区', '天府新区', '青白江区', '新都区', '郫都区'],\n      chartData: [{\n        area: '成都市',\n        value1: ~~(Math.random() * 1000),\n        value2: ~~(Math.random() * 1000) },\n      {\n        area: '绵阳市',\n        value1: 1600,\n        value2: 50 },\n      {\n        area: '简阳市',\n        value1: ~~(Math.random() * 1000),\n        value2: ~~(Math.random() * 1000) },\n      {\n        area: '德阳市',\n        value1: ~~(Math.random() * 1000),\n        value2: ~~(Math.random() * 1000) },\n      {\n        area: '自贡市',\n        value1: ~~(Math.random() * 1000),\n        value2: ~~(Math.random() * 1000) },\n      {\n        area: '眉山市',\n        value1: ~~(Math.random() * 1000),\n        value2: ~~(Math.random() * 1000) },\n      {\n        area: '广安市',\n        value1: ~~(Math.random() * 1000),\n        value2: ~~(Math.random() * 1000) },\n      {\n        area: '广元市',\n        value1: ~~(Math.random() * 1000),\n        value2: ~~(Math.random() * 1000) },\n      {\n        area: '遂宁市',\n        value1: ~~(Math.random() * 1000),\n        value2: ~~(Math.random() * 1000) }],\n\n      YData: [],\n      gap: 0,\n      chartXTextHeight: chartXTextSize + 2,\n      chartXTextSize: chartXTextSize,\n      lineMarginTop: 19,\n      lineHeight: 15,\n      lineBorderHeight: 1,\n      currBarIndex: 0,\n      currSelectedBar: 0 };\n\n  },\n  onLoad: function onLoad() {\n\n  },\n  mounted: function mounted() {\n    this.getYData();\n  },\n  methods: {\n    sliderChange: function sliderChange(event) {\n      __f__(\"log\", event, \" at pages/index/index.vue:148\");\n      this.currBarIndex = event.detail.value;\n    },\n    clickBarItem: function clickBarItem(item, index) {\n      if (index <= this.chartData.length - 5) {\n        this.currBarIndex = index;\n      }\n      this.currSelectedBar = index;\n    },\n    // 单位换算\n    pxtorpx: function pxtorpx(px) {\n      // rpx转px\n      // uni.upx2px(rpx的值)\n      // px转rpx\n      // px的值/(uni.upx2px(10)/10)\n      return px / (uni.upx2px(100) / 100);\n    },\n    getYData: function getYData() {\n      var maxSumValue = 0;\n      this.chartData.forEach(function (_ref)\n\n\n      {var value1 = _ref.value1,value2 = _ref.value2;\n        var sum = value1 + value2;\n        if (sum > maxSumValue) {\n          maxSumValue = sum;\n        }\n      });\n      var gap;\n      if (maxSumValue % 5 === 0) {\n        gap = maxSumValue / 5;\n      } else {\n        gap = ~~(maxSumValue / 5) + 1;\n      }\n      var YData = [];\n      for (var i = 0; i <= 5; i++) {\n        YData.push(i * gap);\n      }\n      __f__(\"log\", gap, maxSumValue, \" at pages/index/index.vue:186\");\n      this.YData = YData.reverse();\n      this.gap = gap;\n    },\n    barChange: function barChange(e) {\n      __f__(\"log\", e, '=====e', \" at pages/index/index.vue:191\");var\n\n      detail =\n      e.detail;\n      this.currBarIndex = detail.current;\n    },\n    cityChange: function cityChange(e) {var\n\n      detail =\n      e.detail;\n      __f__(\"log\", e, '=====e', \" at pages/index/index.vue:201\");\n      this.currentCityIndex = detail.current;\n    },\n    clickCityItem: function clickCityItem(item, index) {\n      this.currentCityIndex = index;\n      // 重新获取countyList\n      this.currentCountyIndex = 0;\n\n    },\n    countyChange: function countyChange(e) {var\n\n      detail =\n      e.detail;\n      this.currentCountyIndex = detail.current;\n    },\n    clickCountyItem: function clickCountyItem(item, index) {\n      this.currentCountyIndex = index;\n    } } };exports.default = _default;\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/vue-cli-plugin-uni/lib/format-log.js */ 7)[\"default\"]))//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInVuaS1hcHA6Ly8vcGFnZXMvaW5kZXgvaW5kZXgudnVlIl0sIm5hbWVzIjpbImRhdGEiLCJjaGFydFhUZXh0U2l6ZSIsImN1cnJlbnRDaXR5SW5kZXgiLCJjdXJyZW50Q291bnR5SW5kZXgiLCJjaXR5TGlzdCIsImNvdW50eUxpc3QiLCJjaGFydERhdGEiLCJhcmVhIiwidmFsdWUxIiwiTWF0aCIsInJhbmRvbSIsInZhbHVlMiIsIllEYXRhIiwiZ2FwIiwiY2hhcnRYVGV4dEhlaWdodCIsImxpbmVNYXJnaW5Ub3AiLCJsaW5lSGVpZ2h0IiwibGluZUJvcmRlckhlaWdodCIsImN1cnJCYXJJbmRleCIsImN1cnJTZWxlY3RlZEJhciIsIm9uTG9hZCIsIm1vdW50ZWQiLCJnZXRZRGF0YSIsIm1ldGhvZHMiLCJzbGlkZXJDaGFuZ2UiLCJldmVudCIsImRldGFpbCIsInZhbHVlIiwiY2xpY2tCYXJJdGVtIiwiaXRlbSIsImluZGV4IiwibGVuZ3RoIiwicHh0b3JweCIsInB4IiwidW5pIiwidXB4MnB4IiwibWF4U3VtVmFsdWUiLCJmb3JFYWNoIiwic3VtIiwiaSIsInB1c2giLCJyZXZlcnNlIiwiYmFyQ2hhbmdlIiwiZSIsImN1cnJlbnQiLCJjaXR5Q2hhbmdlIiwiY2xpY2tDaXR5SXRlbSIsImNvdW50eUNoYW5nZSIsImNsaWNrQ291bnR5SXRlbSJdLCJtYXBwaW5ncyI6InFJQUFBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBOztBQUVlO0FBQ2RBLE1BRGMsa0JBQ1A7QUFDTixRQUFNQyxjQUFjLEdBQUcsRUFBdkI7QUFDQSxXQUFPO0FBQ05DLHNCQUFnQixFQUFFLENBRFo7QUFFTkMsd0JBQWtCLEVBQUUsQ0FGZDtBQUdOQyxjQUFRLEVBQUUsQ0FBQyxLQUFELEVBQVEsS0FBUixFQUFlLEtBQWYsRUFBc0IsS0FBdEIsRUFBNkIsS0FBN0IsRUFBb0MsS0FBcEMsRUFBMkMsS0FBM0MsRUFBa0QsS0FBbEQsRUFBeUQsS0FBekQsQ0FISjtBQUlOQyxnQkFBVSxFQUFFLENBQUMsS0FBRCxFQUFRLEtBQVIsRUFBZSxLQUFmLEVBQXNCLEtBQXRCLEVBQTZCLEtBQTdCLEVBQW9DLEtBQXBDLEVBQTJDLE1BQTNDLEVBQW1ELE1BQW5ELEVBQTJELEtBQTNELEVBQWtFLEtBQWxFLENBSk47QUFLTkMsZUFBUyxFQUFFLENBQUM7QUFDWEMsWUFBSSxFQUFFLEtBREs7QUFFWEMsY0FBTSxFQUFFLENBQUMsRUFBRUMsSUFBSSxDQUFDQyxNQUFMLEtBQWdCLElBQWxCLENBRkU7QUFHWEMsY0FBTSxFQUFFLENBQUMsRUFBRUYsSUFBSSxDQUFDQyxNQUFMLEtBQWdCLElBQWxCLENBSEUsRUFBRDtBQUlSO0FBQ0ZILFlBQUksRUFBRSxLQURKO0FBRUZDLGNBQU0sRUFBRSxJQUZOO0FBR0ZHLGNBQU0sRUFBRSxFQUhOLEVBSlE7QUFRUjtBQUNGSixZQUFJLEVBQUUsS0FESjtBQUVGQyxjQUFNLEVBQUUsQ0FBQyxFQUFFQyxJQUFJLENBQUNDLE1BQUwsS0FBZ0IsSUFBbEIsQ0FGUDtBQUdGQyxjQUFNLEVBQUUsQ0FBQyxFQUFFRixJQUFJLENBQUNDLE1BQUwsS0FBZ0IsSUFBbEIsQ0FIUCxFQVJRO0FBWVI7QUFDRkgsWUFBSSxFQUFFLEtBREo7QUFFRkMsY0FBTSxFQUFFLENBQUMsRUFBRUMsSUFBSSxDQUFDQyxNQUFMLEtBQWdCLElBQWxCLENBRlA7QUFHRkMsY0FBTSxFQUFFLENBQUMsRUFBRUYsSUFBSSxDQUFDQyxNQUFMLEtBQWdCLElBQWxCLENBSFAsRUFaUTtBQWdCUjtBQUNGSCxZQUFJLEVBQUUsS0FESjtBQUVGQyxjQUFNLEVBQUUsQ0FBQyxFQUFFQyxJQUFJLENBQUNDLE1BQUwsS0FBZ0IsSUFBbEIsQ0FGUDtBQUdGQyxjQUFNLEVBQUUsQ0FBQyxFQUFFRixJQUFJLENBQUNDLE1BQUwsS0FBZ0IsSUFBbEIsQ0FIUCxFQWhCUTtBQW9CUjtBQUNGSCxZQUFJLEVBQUUsS0FESjtBQUVGQyxjQUFNLEVBQUUsQ0FBQyxFQUFFQyxJQUFJLENBQUNDLE1BQUwsS0FBZ0IsSUFBbEIsQ0FGUDtBQUdGQyxjQUFNLEVBQUUsQ0FBQyxFQUFFRixJQUFJLENBQUNDLE1BQUwsS0FBZ0IsSUFBbEIsQ0FIUCxFQXBCUTtBQXdCUjtBQUNGSCxZQUFJLEVBQUUsS0FESjtBQUVGQyxjQUFNLEVBQUUsQ0FBQyxFQUFFQyxJQUFJLENBQUNDLE1BQUwsS0FBZ0IsSUFBbEIsQ0FGUDtBQUdGQyxjQUFNLEVBQUUsQ0FBQyxFQUFFRixJQUFJLENBQUNDLE1BQUwsS0FBZ0IsSUFBbEIsQ0FIUCxFQXhCUTtBQTRCUjtBQUNGSCxZQUFJLEVBQUUsS0FESjtBQUVGQyxjQUFNLEVBQUUsQ0FBQyxFQUFFQyxJQUFJLENBQUNDLE1BQUwsS0FBZ0IsSUFBbEIsQ0FGUDtBQUdGQyxjQUFNLEVBQUUsQ0FBQyxFQUFFRixJQUFJLENBQUNDLE1BQUwsS0FBZ0IsSUFBbEIsQ0FIUCxFQTVCUTtBQWdDUjtBQUNGSCxZQUFJLEVBQUUsS0FESjtBQUVGQyxjQUFNLEVBQUUsQ0FBQyxFQUFFQyxJQUFJLENBQUNDLE1BQUwsS0FBZ0IsSUFBbEIsQ0FGUDtBQUdGQyxjQUFNLEVBQUUsQ0FBQyxFQUFFRixJQUFJLENBQUNDLE1BQUwsS0FBZ0IsSUFBbEIsQ0FIUCxFQWhDUSxDQUxMOztBQTBDTkUsV0FBSyxFQUFFLEVBMUNEO0FBMkNOQyxTQUFHLEVBQUUsQ0EzQ0M7QUE0Q05DLHNCQUFnQixFQUFFYixjQUFjLEdBQUcsQ0E1QzdCO0FBNkNOQSxvQkFBYyxFQUFkQSxjQTdDTTtBQThDTmMsbUJBQWEsRUFBRSxFQTlDVDtBQStDTkMsZ0JBQVUsRUFBRSxFQS9DTjtBQWdETkMsc0JBQWdCLEVBQUUsQ0FoRFo7QUFpRE5DLGtCQUFZLEVBQUUsQ0FqRFI7QUFrRE5DLHFCQUFlLEVBQUUsQ0FsRFgsRUFBUDs7QUFvREEsR0F2RGE7QUF3RGRDLFFBeERjLG9CQXdETDs7QUFFUixHQTFEYTtBQTJEZEMsU0EzRGMscUJBMkRKO0FBQ1QsU0FBS0MsUUFBTDtBQUNBLEdBN0RhO0FBOERkQyxTQUFPLEVBQUU7QUFDUkMsZ0JBRFEsd0JBQ0tDLEtBREwsRUFDWTtBQUNuQixtQkFBWUEsS0FBWjtBQUNBLFdBQUtQLFlBQUwsR0FBb0JPLEtBQUssQ0FBQ0MsTUFBTixDQUFhQyxLQUFqQztBQUNBLEtBSk87QUFLUkMsZ0JBTFEsd0JBS0tDLElBTEwsRUFLV0MsS0FMWCxFQUtrQjtBQUN6QixVQUFJQSxLQUFLLElBQUssS0FBS3hCLFNBQUwsQ0FBZXlCLE1BQWYsR0FBd0IsQ0FBdEMsRUFBMEM7QUFDekMsYUFBS2IsWUFBTCxHQUFvQlksS0FBcEI7QUFDQTtBQUNELFdBQUtYLGVBQUwsR0FBdUJXLEtBQXZCO0FBQ0EsS0FWTztBQVdSO0FBQ0FFLFdBWlEsbUJBWUFDLEVBWkEsRUFZSTtBQUNYO0FBQ0E7QUFDQTtBQUNBO0FBQ0EsYUFBT0EsRUFBRSxJQUFJQyxHQUFHLENBQUNDLE1BQUosQ0FBVyxHQUFYLElBQWtCLEdBQXRCLENBQVQ7QUFDQSxLQWxCTztBQW1CUmIsWUFuQlEsc0JBbUJHO0FBQ1YsVUFBSWMsV0FBVyxHQUFHLENBQWxCO0FBQ0EsV0FBSzlCLFNBQUwsQ0FBZStCLE9BQWYsQ0FBdUI7OztBQUdqQixXQUZMN0IsTUFFSyxRQUZMQSxNQUVLLENBRExHLE1BQ0ssUUFETEEsTUFDSztBQUNMLFlBQU0yQixHQUFHLEdBQUc5QixNQUFNLEdBQUdHLE1BQXJCO0FBQ0EsWUFBSTJCLEdBQUcsR0FBR0YsV0FBVixFQUF1QjtBQUN0QkEscUJBQVcsR0FBR0UsR0FBZDtBQUNBO0FBQ0QsT0FSRDtBQVNBLFVBQUl6QixHQUFKO0FBQ0EsVUFBSXVCLFdBQVcsR0FBRyxDQUFkLEtBQW9CLENBQXhCLEVBQTJCO0FBQzFCdkIsV0FBRyxHQUFHdUIsV0FBVyxHQUFHLENBQXBCO0FBQ0EsT0FGRCxNQUVPO0FBQ052QixXQUFHLEdBQUcsQ0FBQyxFQUFFdUIsV0FBVyxHQUFHLENBQWhCLENBQUQsR0FBc0IsQ0FBNUI7QUFDQTtBQUNELFVBQU14QixLQUFLLEdBQUcsRUFBZDtBQUNBLFdBQUssSUFBSTJCLENBQUMsR0FBRyxDQUFiLEVBQWdCQSxDQUFDLElBQUksQ0FBckIsRUFBd0JBLENBQUMsRUFBekIsRUFBNkI7QUFDNUIzQixhQUFLLENBQUM0QixJQUFOLENBQVdELENBQUMsR0FBRzFCLEdBQWY7QUFDQTtBQUNELG1CQUFZQSxHQUFaLEVBQWlCdUIsV0FBakI7QUFDQSxXQUFLeEIsS0FBTCxHQUFhQSxLQUFLLENBQUM2QixPQUFOLEVBQWI7QUFDQSxXQUFLNUIsR0FBTCxHQUFXQSxHQUFYO0FBQ0EsS0EzQ087QUE0Q1I2QixhQTVDUSxxQkE0Q0VDLENBNUNGLEVBNENLO0FBQ1osbUJBQVlBLENBQVosRUFBZSxRQUFmLG1DQURZOztBQUdYakIsWUFIVztBQUlSaUIsT0FKUSxDQUdYakIsTUFIVztBQUtaLFdBQUtSLFlBQUwsR0FBb0JRLE1BQU0sQ0FBQ2tCLE9BQTNCO0FBQ0EsS0FsRE87QUFtRFJDLGNBbkRRLHNCQW1ER0YsQ0FuREgsRUFtRE07O0FBRVpqQixZQUZZO0FBR1RpQixPQUhTLENBRVpqQixNQUZZO0FBSWIsbUJBQVlpQixDQUFaLEVBQWUsUUFBZjtBQUNBLFdBQUt6QyxnQkFBTCxHQUF3QndCLE1BQU0sQ0FBQ2tCLE9BQS9CO0FBQ0EsS0F6RE87QUEwRFJFLGlCQTFEUSx5QkEwRE1qQixJQTFETixFQTBEWUMsS0ExRFosRUEwRG1CO0FBQzFCLFdBQUs1QixnQkFBTCxHQUF3QjRCLEtBQXhCO0FBQ0E7QUFDQSxXQUFLM0Isa0JBQUwsR0FBMEIsQ0FBMUI7O0FBRUEsS0EvRE87QUFnRVI0QyxnQkFoRVEsd0JBZ0VLSixDQWhFTCxFQWdFUTs7QUFFZGpCLFlBRmM7QUFHWGlCLE9BSFcsQ0FFZGpCLE1BRmM7QUFJZixXQUFLdkIsa0JBQUwsR0FBMEJ1QixNQUFNLENBQUNrQixPQUFqQztBQUNBLEtBckVPO0FBc0VSSSxtQkF0RVEsMkJBc0VRbkIsSUF0RVIsRUFzRWNDLEtBdEVkLEVBc0VxQjtBQUM1QixXQUFLM0Isa0JBQUwsR0FBMEIyQixLQUExQjtBQUNBLEtBeEVPLEVBOURLLEUiLCJmaWxlIjoiNi5qcyIsInNvdXJjZXNDb250ZW50IjpbIi8vXG4vL1xuLy9cbi8vXG4vL1xuLy9cbi8vXG4vL1xuLy9cbi8vXG4vL1xuLy9cbi8vXG4vL1xuLy9cbi8vXG4vL1xuLy9cbi8vXG4vL1xuLy9cbi8vXG4vL1xuLy9cbi8vXG4vL1xuLy9cbi8vXG4vL1xuLy9cbi8vXG4vL1xuLy9cbi8vXG4vL1xuLy9cbi8vXG4vL1xuLy9cbi8vXG4vL1xuLy9cbi8vXG4vL1xuLy9cbi8vXG4vL1xuLy9cbi8vXG4vL1xuLy9cbi8vXG4vL1xuLy9cbi8vXG4vL1xuLy9cbi8vXG4vL1xuLy9cbi8vXG4vL1xuLy9cbi8vXG4vL1xuLy9cbi8vXG4vL1xuLy9cbi8vXG4vL1xuLy9cbi8vXG4vL1xuLy9cbi8vXG4vL1xuLy9cbi8vXG4vL1xuLy9cbi8vXG5cbmV4cG9ydCBkZWZhdWx0IHtcblx0ZGF0YSgpIHtcblx0XHRjb25zdCBjaGFydFhUZXh0U2l6ZSA9IDEyXG5cdFx0cmV0dXJuIHtcblx0XHRcdGN1cnJlbnRDaXR5SW5kZXg6IDAsXG5cdFx0XHRjdXJyZW50Q291bnR5SW5kZXg6IDAsXG5cdFx0XHRjaXR5TGlzdDogWyfmiJDpg73luIInLCAn57u16Ziz5biCJywgJ+eugOmYs+W4gicsICflvrfpmLPluIInLCAn6Ieq6LSh5biCJywgJ+ecieWxseW4gicsICflub/lronluIInLCAn5bm/5YWD5biCJywgJ+mBguWugeW4giddLFxuXHRcdFx0Y291bnR5TGlzdDogWyfph5HniZvljLonLCAn5q2m5L6v5Yy6JywgJ+WPjOa1geWMuicsICfmiJDljY7ljLonLCAn6auY5paw5Yy6JywgJ+mdkue+iuWMuicsICflpKnlupzmlrDljLonLCAn6Z2S55m95rGf5Yy6JywgJ+aWsOmDveWMuicsICfpg6vpg73ljLonXSxcblx0XHRcdGNoYXJ0RGF0YTogW3tcblx0XHRcdFx0YXJlYTogJ+aIkOmDveW4gicsXG5cdFx0XHRcdHZhbHVlMTogfn4oTWF0aC5yYW5kb20oKSAqIDEwMDApLFxuXHRcdFx0XHR2YWx1ZTI6IH5+KE1hdGgucmFuZG9tKCkgKiAxMDAwKVxuXHRcdFx0fSwge1xuXHRcdFx0XHRhcmVhOiAn57u16Ziz5biCJyxcblx0XHRcdFx0dmFsdWUxOiAxNjAwLFxuXHRcdFx0XHR2YWx1ZTI6IDUwXG5cdFx0XHR9LCB7XG5cdFx0XHRcdGFyZWE6ICfnroDpmLPluIInLFxuXHRcdFx0XHR2YWx1ZTE6IH5+KE1hdGgucmFuZG9tKCkgKiAxMDAwKSxcblx0XHRcdFx0dmFsdWUyOiB+fihNYXRoLnJhbmRvbSgpICogMTAwMClcblx0XHRcdH0sIHtcblx0XHRcdFx0YXJlYTogJ+W+t+mYs+W4gicsXG5cdFx0XHRcdHZhbHVlMTogfn4oTWF0aC5yYW5kb20oKSAqIDEwMDApLFxuXHRcdFx0XHR2YWx1ZTI6IH5+KE1hdGgucmFuZG9tKCkgKiAxMDAwKVxuXHRcdFx0fSwge1xuXHRcdFx0XHRhcmVhOiAn6Ieq6LSh5biCJyxcblx0XHRcdFx0dmFsdWUxOiB+fihNYXRoLnJhbmRvbSgpICogMTAwMCksXG5cdFx0XHRcdHZhbHVlMjogfn4oTWF0aC5yYW5kb20oKSAqIDEwMDApXG5cdFx0XHR9LCB7XG5cdFx0XHRcdGFyZWE6ICfnnInlsbHluIInLFxuXHRcdFx0XHR2YWx1ZTE6IH5+KE1hdGgucmFuZG9tKCkgKiAxMDAwKSxcblx0XHRcdFx0dmFsdWUyOiB+fihNYXRoLnJhbmRvbSgpICogMTAwMClcblx0XHRcdH0sIHtcblx0XHRcdFx0YXJlYTogJ+W5v+WuieW4gicsXG5cdFx0XHRcdHZhbHVlMTogfn4oTWF0aC5yYW5kb20oKSAqIDEwMDApLFxuXHRcdFx0XHR2YWx1ZTI6IH5+KE1hdGgucmFuZG9tKCkgKiAxMDAwKVxuXHRcdFx0fSwge1xuXHRcdFx0XHRhcmVhOiAn5bm/5YWD5biCJyxcblx0XHRcdFx0dmFsdWUxOiB+fihNYXRoLnJhbmRvbSgpICogMTAwMCksXG5cdFx0XHRcdHZhbHVlMjogfn4oTWF0aC5yYW5kb20oKSAqIDEwMDApXG5cdFx0XHR9LCB7XG5cdFx0XHRcdGFyZWE6ICfpgYLlroHluIInLFxuXHRcdFx0XHR2YWx1ZTE6IH5+KE1hdGgucmFuZG9tKCkgKiAxMDAwKSxcblx0XHRcdFx0dmFsdWUyOiB+fihNYXRoLnJhbmRvbSgpICogMTAwMClcblx0XHRcdH1dLFxuXHRcdFx0WURhdGE6IFtdLFxuXHRcdFx0Z2FwOiAwLFxuXHRcdFx0Y2hhcnRYVGV4dEhlaWdodDogY2hhcnRYVGV4dFNpemUgKyAyLFxuXHRcdFx0Y2hhcnRYVGV4dFNpemUsXG5cdFx0XHRsaW5lTWFyZ2luVG9wOiAxOSxcblx0XHRcdGxpbmVIZWlnaHQ6IDE1LFxuXHRcdFx0bGluZUJvcmRlckhlaWdodDogMSxcblx0XHRcdGN1cnJCYXJJbmRleDogMCxcblx0XHRcdGN1cnJTZWxlY3RlZEJhcjogMCxcblx0XHR9XG5cdH0sXG5cdG9uTG9hZCgpIHtcblxuXHR9LFxuXHRtb3VudGVkKCkge1xuXHRcdHRoaXMuZ2V0WURhdGEoKVxuXHR9LFxuXHRtZXRob2RzOiB7XG5cdFx0c2xpZGVyQ2hhbmdlKGV2ZW50KSB7XG5cdFx0XHRjb25zb2xlLmxvZyhldmVudClcblx0XHRcdHRoaXMuY3VyckJhckluZGV4ID0gZXZlbnQuZGV0YWlsLnZhbHVlXG5cdFx0fSxcblx0XHRjbGlja0Jhckl0ZW0oaXRlbSwgaW5kZXgpIHtcblx0XHRcdGlmIChpbmRleCA8PSAodGhpcy5jaGFydERhdGEubGVuZ3RoIC0gNSkpIHtcblx0XHRcdFx0dGhpcy5jdXJyQmFySW5kZXggPSBpbmRleFxuXHRcdFx0fVxuXHRcdFx0dGhpcy5jdXJyU2VsZWN0ZWRCYXIgPSBpbmRleFxuXHRcdH0sXG5cdFx0Ly8g5Y2V5L2N5o2i566XXG5cdFx0cHh0b3JweChweCkge1xuXHRcdFx0Ly8gcnB46L2scHhcblx0XHRcdC8vIHVuaS51cHgycHgocnB455qE5YC8KVxuXHRcdFx0Ly8gcHjovaxycHhcblx0XHRcdC8vIHB455qE5YC8Lyh1bmkudXB4MnB4KDEwKS8xMClcblx0XHRcdHJldHVybiBweCAvICh1bmkudXB4MnB4KDEwMCkgLyAxMDApXG5cdFx0fSxcblx0XHRnZXRZRGF0YSgpIHtcblx0XHRcdGxldCBtYXhTdW1WYWx1ZSA9IDBcblx0XHRcdHRoaXMuY2hhcnREYXRhLmZvckVhY2goKHtcblx0XHRcdFx0dmFsdWUxLFxuXHRcdFx0XHR2YWx1ZTJcblx0XHRcdH0pID0+IHtcblx0XHRcdFx0Y29uc3Qgc3VtID0gdmFsdWUxICsgdmFsdWUyXG5cdFx0XHRcdGlmIChzdW0gPiBtYXhTdW1WYWx1ZSkge1xuXHRcdFx0XHRcdG1heFN1bVZhbHVlID0gc3VtXG5cdFx0XHRcdH1cblx0XHRcdH0pXG5cdFx0XHRsZXQgZ2FwXG5cdFx0XHRpZiAobWF4U3VtVmFsdWUgJSA1ID09PSAwKSB7XG5cdFx0XHRcdGdhcCA9IG1heFN1bVZhbHVlIC8gNVxuXHRcdFx0fSBlbHNlIHtcblx0XHRcdFx0Z2FwID0gfn4obWF4U3VtVmFsdWUgLyA1KSArIDFcblx0XHRcdH1cblx0XHRcdGNvbnN0IFlEYXRhID0gW11cblx0XHRcdGZvciAobGV0IGkgPSAwOyBpIDw9IDU7IGkrKykge1xuXHRcdFx0XHRZRGF0YS5wdXNoKGkgKiBnYXApXG5cdFx0XHR9XG5cdFx0XHRjb25zb2xlLmxvZyhnYXAsIG1heFN1bVZhbHVlKVxuXHRcdFx0dGhpcy5ZRGF0YSA9IFlEYXRhLnJldmVyc2UoKVxuXHRcdFx0dGhpcy5nYXAgPSBnYXBcblx0XHR9LFxuXHRcdGJhckNoYW5nZShlKSB7XG5cdFx0XHRjb25zb2xlLmxvZyhlLCAnPT09PT1lJylcblx0XHRcdGNvbnN0IHtcblx0XHRcdFx0ZGV0YWlsXG5cdFx0XHR9ID0gZVxuXHRcdFx0dGhpcy5jdXJyQmFySW5kZXggPSBkZXRhaWwuY3VycmVudFxuXHRcdH0sXG5cdFx0Y2l0eUNoYW5nZShlKSB7XG5cdFx0XHRjb25zdCB7XG5cdFx0XHRcdGRldGFpbFxuXHRcdFx0fSA9IGVcblx0XHRcdGNvbnNvbGUubG9nKGUsICc9PT09PWUnKVxuXHRcdFx0dGhpcy5jdXJyZW50Q2l0eUluZGV4ID0gZGV0YWlsLmN1cnJlbnRcblx0XHR9LFxuXHRcdGNsaWNrQ2l0eUl0ZW0oaXRlbSwgaW5kZXgpIHtcblx0XHRcdHRoaXMuY3VycmVudENpdHlJbmRleCA9IGluZGV4XG5cdFx0XHQvLyDph43mlrDojrflj5Zjb3VudHlMaXN0XG5cdFx0XHR0aGlzLmN1cnJlbnRDb3VudHlJbmRleCA9IDBcblxuXHRcdH0sXG5cdFx0Y291bnR5Q2hhbmdlKGUpIHtcblx0XHRcdGNvbnN0IHtcblx0XHRcdFx0ZGV0YWlsXG5cdFx0XHR9ID0gZVxuXHRcdFx0dGhpcy5jdXJyZW50Q291bnR5SW5kZXggPSBkZXRhaWwuY3VycmVudFxuXHRcdH0sXG5cdFx0Y2xpY2tDb3VudHlJdGVtKGl0ZW0sIGluZGV4KSB7XG5cdFx0XHR0aGlzLmN1cnJlbnRDb3VudHlJbmRleCA9IGluZGV4XG5cdFx0fVxuXHR9XG59XG4iXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///6\n");
+eval("/* WEBPACK VAR INJECTION */(function(__f__) {Object.defineProperty(exports, \"__esModule\", { value: true });exports.default = void 0; //\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\nvar _default =\n{\n  data: function data() {\n    var chartXTextSize = 12;\n    return {\n      swiperItemNumber: 5,\n      currentCityIndex: 0,\n      currentCountyIndex: 0,\n      cityList: ['成都市', '绵阳市', '简阳市', '德阳市', '自贡市', '眉山市', '广安市', '广元市', '遂宁市'],\n      countyList: ['金牛区', '武侯区', '双流区', '成华区', '高新区', '青羊区', '天府新区', '青白江区', '新都区', '郫都区'],\n      chartData: [{\n        area: '成都市',\n        value1: ~~(Math.random() * 1000),\n        value2: ~~(Math.random() * 1000) },\n      {\n        area: '绵阳市',\n        value1: 1600,\n        value2: 50 },\n      {\n        area: '简阳市',\n        value1: ~~(Math.random() * 1000),\n        value2: ~~(Math.random() * 1000) },\n      {\n        area: '德阳市',\n        value1: ~~(Math.random() * 1000),\n        value2: ~~(Math.random() * 1000) },\n      {\n        area: '自贡市',\n        value1: ~~(Math.random() * 1000),\n        value2: ~~(Math.random() * 1000) },\n      {\n        area: '眉山市',\n        value1: ~~(Math.random() * 1000),\n        value2: ~~(Math.random() * 1000) },\n      {\n        area: '广安市',\n        value1: ~~(Math.random() * 1000),\n        value2: ~~(Math.random() * 1000) },\n      {\n        area: '广元市',\n        value1: ~~(Math.random() * 1000),\n        value2: ~~(Math.random() * 1000) },\n      {\n        area: '遂宁市',\n        value1: ~~(Math.random() * 1000),\n        value2: ~~(Math.random() * 1000) }],\n\n      YData: [],\n      gap: 0,\n      chartXTextHeight: chartXTextSize + 2,\n      chartXTextSize: chartXTextSize,\n      lineMarginTop: 18,\n      lineHeight: 16,\n      lineBorderHeight: 1,\n      currBarIndex: 0,\n      currSelectedBar: 0 };\n\n  },\n  onLoad: function onLoad() {\n\n  },\n  mounted: function mounted() {\n    this.getYData();\n  },\n  methods: {\n    sliderChange: function sliderChange(event) {\n      __f__(\"log\", event, \" at pages/index/index.vue:153\");\n      this.currBarIndex = event.detail.value;\n    },\n    clickBarItem: function clickBarItem(item, index) {\n      if (index <= this.chartData.length - this.swiperItemNumber) {\n        this.currBarIndex = index;\n      }\n      this.currSelectedBar = index;\n    },\n    // 单位换算\n    pxtorpx: function pxtorpx(px) {\n      // rpx转px\n      // uni.upx2px(rpx的值)\n      // px转rpx\n      // px的值/(uni.upx2px(10)/10)\n      return px / (uni.upx2px(100) / 100);\n    },\n    getYData: function getYData() {\n      var maxSumValue = 0;\n      this.chartData.forEach(function (_ref)\n\n\n      {var value1 = _ref.value1,value2 = _ref.value2;\n        var sum = value1 + value2;\n        if (sum > maxSumValue) {\n          maxSumValue = sum;\n        }\n      });\n      var gap;\n      if (maxSumValue % 5 === 0) {\n        gap = maxSumValue / 5;\n      } else {\n        gap = ~~(maxSumValue / 5) + 1;\n      }\n      var YData = [];\n      for (var i = 0; i <= 5; i++) {\n        YData.push(i * gap);\n      }\n      __f__(\"log\", gap, maxSumValue, \" at pages/index/index.vue:191\");\n      this.YData = YData.reverse();\n      this.gap = gap;\n    },\n    barChange: function barChange(e) {\n      __f__(\"log\", e, '=====e', \" at pages/index/index.vue:196\");var\n\n      detail =\n      e.detail;\n      this.currBarIndex = detail.current;\n    },\n    cityChange: function cityChange(e) {var\n\n      detail =\n      e.detail;\n      __f__(\"log\", e, '=====e', \" at pages/index/index.vue:206\");\n      this.currentCityIndex = detail.current;\n    },\n    clickCityItem: function clickCityItem(item, index) {\n      this.currentCityIndex = index;\n      // 重新获取countyList\n      this.currentCountyIndex = 0;\n\n    },\n    countyChange: function countyChange(e) {var\n\n      detail =\n      e.detail;\n      this.currentCountyIndex = detail.current;\n    },\n    clickCountyItem: function clickCountyItem(item, index) {\n      this.currentCountyIndex = index;\n    } } };exports.default = _default;\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/vue-cli-plugin-uni/lib/format-log.js */ 7)[\"default\"]))//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInVuaS1hcHA6Ly8vcGFnZXMvaW5kZXgvaW5kZXgudnVlIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztBQXVGQTtBQUNBLE1BREEsa0JBQ0E7QUFDQTtBQUNBO0FBQ0EseUJBREE7QUFFQSx5QkFGQTtBQUdBLDJCQUhBO0FBSUEsK0VBSkE7QUFLQSwwRkFMQTtBQU1BO0FBQ0EsbUJBREE7QUFFQSx3Q0FGQTtBQUdBLHdDQUhBO0FBSUE7QUFDQSxtQkFEQTtBQUVBLG9CQUZBO0FBR0Esa0JBSEEsRUFKQTtBQVFBO0FBQ0EsbUJBREE7QUFFQSx3Q0FGQTtBQUdBLHdDQUhBLEVBUkE7QUFZQTtBQUNBLG1CQURBO0FBRUEsd0NBRkE7QUFHQSx3Q0FIQSxFQVpBO0FBZ0JBO0FBQ0EsbUJBREE7QUFFQSx3Q0FGQTtBQUdBLHdDQUhBLEVBaEJBO0FBb0JBO0FBQ0EsbUJBREE7QUFFQSx3Q0FGQTtBQUdBLHdDQUhBLEVBcEJBO0FBd0JBO0FBQ0EsbUJBREE7QUFFQSx3Q0FGQTtBQUdBLHdDQUhBLEVBeEJBO0FBNEJBO0FBQ0EsbUJBREE7QUFFQSx3Q0FGQTtBQUdBLHdDQUhBLEVBNUJBO0FBZ0NBO0FBQ0EsbUJBREE7QUFFQSx3Q0FGQTtBQUdBLHdDQUhBLEVBaENBLENBTkE7O0FBMkNBLGVBM0NBO0FBNENBLFlBNUNBO0FBNkNBLDBDQTdDQTtBQThDQSxvQ0E5Q0E7QUErQ0EsdUJBL0NBO0FBZ0RBLG9CQWhEQTtBQWlEQSx5QkFqREE7QUFrREEscUJBbERBO0FBbURBLHdCQW5EQTs7QUFxREEsR0F4REE7QUF5REEsUUF6REEsb0JBeURBOztBQUVBLEdBM0RBO0FBNERBLFNBNURBLHFCQTREQTtBQUNBO0FBQ0EsR0E5REE7QUErREE7QUFDQSxnQkFEQSx3QkFDQSxLQURBLEVBQ0E7QUFDQTtBQUNBO0FBQ0EsS0FKQTtBQUtBLGdCQUxBLHdCQUtBLElBTEEsRUFLQSxLQUxBLEVBS0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBLEtBVkE7QUFXQTtBQUNBLFdBWkEsbUJBWUEsRUFaQSxFQVlBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBLEtBbEJBO0FBbUJBLFlBbkJBLHNCQW1CQTtBQUNBO0FBQ0E7OztBQUdBLFdBRkEsTUFFQSxRQUZBLE1BRUEsQ0FEQSxNQUNBLFFBREEsTUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0EsT0FSQTtBQVNBO0FBQ0E7QUFDQTtBQUNBLE9BRkEsTUFFQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBLEtBM0NBO0FBNENBLGFBNUNBLHFCQTRDQSxDQTVDQSxFQTRDQTtBQUNBLGlFQURBOztBQUdBLFlBSEE7QUFJQSxPQUpBLENBR0EsTUFIQTtBQUtBO0FBQ0EsS0FsREE7QUFtREEsY0FuREEsc0JBbURBLENBbkRBLEVBbURBOztBQUVBLFlBRkE7QUFHQSxPQUhBLENBRUEsTUFGQTtBQUlBO0FBQ0E7QUFDQSxLQXpEQTtBQTBEQSxpQkExREEseUJBMERBLElBMURBLEVBMERBLEtBMURBLEVBMERBO0FBQ0E7QUFDQTtBQUNBOztBQUVBLEtBL0RBO0FBZ0VBLGdCQWhFQSx3QkFnRUEsQ0FoRUEsRUFnRUE7O0FBRUEsWUFGQTtBQUdBLE9BSEEsQ0FFQSxNQUZBO0FBSUE7QUFDQSxLQXJFQTtBQXNFQSxtQkF0RUEsMkJBc0VBLElBdEVBLEVBc0VBLEtBdEVBLEVBc0VBO0FBQ0E7QUFDQSxLQXhFQSxFQS9EQSxFIiwiZmlsZSI6IjYuanMiLCJzb3VyY2VzQ29udGVudCI6WyI8dGVtcGxhdGU+XHJcblx0PHZpZXcgY2xhc3M9XCJjb250ZW50XCI+XHJcblx0XHQ8dmlldz7nroDku4s8L3ZpZXc+XHJcblx0XHQ8IS0tZGlzcGxheS1tdWx0aXBsZS1pdGVtc+WQjOaXtuaYvuekuueahOa7keWdl+aVsOmHjyAgLS0+XHJcblx0XHQ8c3dpcGVyIGNsYXNzPVwic3dpcGVyVmlld1wiIDpkaXNwbGF5LW11bHRpcGxlLWl0ZW1zPSdzd2lwZXJJdGVtTnVtYmVyJyA6Y3VycmVudD1cImN1cnJlbnRDaXR5SW5kZXhcIiBAY2hhbmdlPVwiY2l0eUNoYW5nZVwiPlxyXG5cdFx0XHQ8c3dpcGVyLWl0ZW0+XHJcblx0XHRcdFx0PHZpZXcgY2xhc3M9XCJibG9ja1wiPjwvdmlldz5cclxuXHRcdFx0PC9zd2lwZXItaXRlbT5cclxuXHRcdFx0PHN3aXBlci1pdGVtPlxyXG5cdFx0XHRcdDx2aWV3IGNsYXNzPVwiYmxvY2tcIj48L3ZpZXc+XHJcblx0XHRcdDwvc3dpcGVyLWl0ZW0+XHJcblx0XHRcdDxibG9jayB2LWZvcj1cIihpdGVtLCBpbmRleCkgaW4gY2l0eUxpc3RcIj5cclxuXHRcdFx0XHQ8c3dpcGVyLWl0ZW0+XHJcblx0XHRcdFx0XHQ8dmlldyBAY2xpY2s9XCJjbGlja0NpdHlJdGVtKGl0ZW0sIGluZGV4KVwiIGNsYXNzPVwiYmxvY2tcIiA6a2V5PVwiJ2NpdHktJytpbmRleFwiXHJcblx0XHRcdFx0XHRcdDpjbGFzcz1cInsnY29sb3InOiBjdXJyZW50Q2l0eUluZGV4ID09PSBpbmRleH1cIj57e2l0ZW19fTwvdmlldz5cclxuXHRcdFx0XHQ8L3N3aXBlci1pdGVtPlxyXG5cdFx0XHQ8L2Jsb2NrPlxyXG5cdFx0XHQ8c3dpcGVyLWl0ZW0+XHJcblx0XHRcdFx0PHZpZXcgY2xhc3M9XCJibG9ja1wiPjwvdmlldz5cclxuXHRcdFx0PC9zd2lwZXItaXRlbT5cclxuXHRcdFx0PHN3aXBlci1pdGVtPlxyXG5cdFx0XHRcdDx2aWV3IGNsYXNzPVwiYmxvY2tcIj48L3ZpZXc+XHJcblx0XHRcdDwvc3dpcGVyLWl0ZW0+XHJcblx0XHQ8L3N3aXBlcj5cclxuXHRcdDxzd2lwZXIgY2xhc3M9XCJzd2lwZXJWaWV3XCIgOmRpc3BsYXktbXVsdGlwbGUtaXRlbXM9J3N3aXBlckl0ZW1OdW1iZXInIDpjdXJyZW50PVwiY3VycmVudENvdW50eUluZGV4XCIgQGNoYW5nZT1cImNvdW50eUNoYW5nZVwiPlxyXG5cdFx0XHQ8c3dpcGVyLWl0ZW0+XHJcblx0XHRcdFx0PHZpZXcgY2xhc3M9XCJibG9ja1wiPjwvdmlldz5cclxuXHRcdFx0PC9zd2lwZXItaXRlbT5cclxuXHRcdFx0PHN3aXBlci1pdGVtPlxyXG5cdFx0XHRcdDx2aWV3IGNsYXNzPVwiYmxvY2tcIj48L3ZpZXc+XHJcblx0XHRcdDwvc3dpcGVyLWl0ZW0+XHJcblx0XHRcdDxibG9jayB2LWZvcj1cIihpdGVtLCBpbmRleCkgaW4gY291bnR5TGlzdFwiPlxyXG5cdFx0XHRcdDxzd2lwZXItaXRlbT5cclxuXHRcdFx0XHRcdDx2aWV3IEBjbGljaz1cImNsaWNrQ291bnR5SXRlbShpdGVtLCBpbmRleClcIiBjbGFzcz1cImJsb2NrXCIgOmtleT1cIidjb3VudHktJytpbmRleFwiXHJcblx0XHRcdFx0XHRcdDpjbGFzcz1cInsnY29sb3InOiBjdXJyZW50Q291bnR5SW5kZXggPT09IGluZGV4fVwiPnt7aXRlbX19PC92aWV3PlxyXG5cdFx0XHRcdDwvc3dpcGVyLWl0ZW0+XHJcblx0XHRcdDwvYmxvY2s+XHJcblx0XHRcdDxzd2lwZXItaXRlbT5cclxuXHRcdFx0XHQ8dmlldyBjbGFzcz1cImJsb2NrXCI+PC92aWV3PlxyXG5cdFx0XHQ8L3N3aXBlci1pdGVtPlxyXG5cdFx0XHQ8c3dpcGVyLWl0ZW0+XHJcblx0XHRcdFx0PHZpZXcgY2xhc3M9XCJibG9ja1wiPjwvdmlldz5cclxuXHRcdFx0PC9zd2lwZXItaXRlbT5cclxuXHRcdDwvc3dpcGVyPlxyXG5cdFx0PHZpZXcgY2xhc3M9XCJjaGFydC1ib3hcIj5cclxuXHRcdFx0PHZpZXcgY2xhc3M9XCJjaGFydC1saW5lLWJveFwiPlxyXG5cdFx0XHRcdDx2aWV3IGNsYXNzPVwiY2hhcnQtbGluZVwiXHJcblx0XHRcdFx0XHQ6c3R5bGU9XCJgbWFyZ2luLXRvcDogJHtweHRvcnB4KGxpbmVNYXJnaW5Ub3ApfXJweDtoZWlnaHQ6JHtweHRvcnB4KGxpbmVIZWlnaHQpfXJweGBcIlxyXG5cdFx0XHRcdFx0di1mb3I9XCIoaXRlbSwgaW5kZXgpIGluIFlEYXRhXCIgOmtleT1cImluZGV4XCI+XHJcblx0XHRcdFx0XHQ8dGV4dCBjbGFzcz1cImNoYXJ0LWxpbmUtdGV4dFwiPnt7aXRlbX19PC90ZXh0PlxyXG5cdFx0XHRcdFx0PHZpZXcgY2xhc3M9XCJjaGFydC1saW5lLXlcIiA6c3R5bGU9XCJgaGVpZ2h0OiAke3B4dG9ycHgobGluZUJvcmRlckhlaWdodCl9cnB4YFwiPjwvdmlldz5cclxuXHRcdFx0XHQ8L3ZpZXc+XHJcblx0XHRcdDwvdmlldz5cclxuXHRcdFx0PHZpZXcgY2xhc3M9XCJjaGFydC1iYXJcIiA6c3R5bGU9XCJgYm90dG9tOiR7KHB4dG9ycHgobGluZUhlaWdodC8yKSAtIHB4dG9ycHgoY2hhcnRYVGV4dEhlaWdodCkpfXJweDtgXCI+XHJcblx0XHRcdFx0PHN3aXBlciA6ZGlzcGxheS1tdWx0aXBsZS1pdGVtcz0nc3dpcGVySXRlbU51bWJlcicgQGNoYW5nZT1cImJhckNoYW5nZVwiIDpjdXJyZW50PVwiY3VyckJhckluZGV4XCI+XHJcblx0XHRcdFx0XHQ8c3dpcGVyLWl0ZW0gdi1mb3I9XCIoaXRlbSxpbmRleCkgaW4gY2hhcnREYXRhXCIgOmtleT1cIml0ZW0uYXJlYVwiIEBjbGljaz1cImNsaWNrQmFySXRlbShpdGVtLCBpbmRleClcIj5cclxuXHRcdFx0XHRcdFx0PHZpZXcgY2xhc3M9XCJjaGFydC1iYXItY29udGVudFwiXHJcblx0XHRcdFx0XHRcdFx0OmNsYXNzPVwieydjaGFydC1iYXItY29udGVudC1hY3RpdmVkJzogY3VyclNlbGVjdGVkQmFyID09PSBpbmRleH1cIj5cclxuXHRcdFx0XHRcdFx0XHQ8dGV4dCBjbGFzcz1cImNoYXJ0LWJhci10ZXh0XCI+e3tpdGVtLnZhbHVlMStpdGVtLnZhbHVlMn19PC90ZXh0PlxyXG5cdFx0XHRcdFx0XHRcdDx2aWV3XHJcblx0XHRcdFx0XHRcdFx0XHRjbGFzcz1cImNoYXJ0LWJhci10b3BcIlxyXG5cdFx0XHRcdFx0XHRcdFx0OnN0eWxlPVwiYGhlaWdodDogJHsocHh0b3JweChsaW5lTWFyZ2luVG9wK2xpbmVIZWlnaHQpKml0ZW0udmFsdWUxKS9nYXB9cnB4O2BcIj5cclxuXHRcdFx0XHRcdFx0XHQ8L3ZpZXc+XHJcblx0XHRcdFx0XHRcdFx0PHZpZXdcclxuXHRcdFx0XHRcdFx0XHRcdGNsYXNzPVwiY2hhcnQtYmFyLWJvdHRvbVwiXHJcblx0XHRcdFx0XHRcdFx0XHQ6c3R5bGU9XCJgaGVpZ2h0OiAkeyhweHRvcnB4KGxpbmVNYXJnaW5Ub3ArbGluZUhlaWdodCkqaXRlbS52YWx1ZTIpL2dhcH1ycHg7YFwiPlxyXG5cdFx0XHRcdFx0XHRcdDwvdmlldz5cclxuXHRcdFx0XHRcdFx0XHQ8dmlldyBjbGFzcz1cImNoYXJ0LXgtdGV4dFwiXHJcblx0XHRcdFx0XHRcdFx0XHQ6c3R5bGU9XCJgZm9udC1zaXplOiAke3B4dG9ycHgoY2hhcnRYVGV4dFNpemUpfXJweDtoZWlnaHQ6ICR7cHh0b3JweChjaGFydFhUZXh0SGVpZ2h0KX1ycHg7bGluZS1oZWlnaHQ6ICR7cHh0b3JweChjaGFydFhUZXh0SGVpZ2h0KX1ycHhgXCI+XHJcblx0XHRcdFx0XHRcdFx0XHR7e2l0ZW0uYXJlYX19XHJcblx0XHRcdFx0XHRcdFx0PC92aWV3PlxyXG5cdFx0XHRcdFx0XHRcdDx2aWV3IGNsYXNzPVwidGVzdFwiPjwvdmlldz5cclxuXHRcdFx0XHRcdFx0PC92aWV3PlxyXG5cdFx0XHRcdFx0PC9zd2lwZXItaXRlbT5cclxuXHRcdFx0XHQ8L3N3aXBlcj5cclxuXHRcdFx0PC92aWV3PlxyXG5cdFx0PC92aWV3PlxyXG5cdFx0PHZpZXcgY2xhc3M9XCJzbGlkZXItYm94XCI+XHJcblx0XHRcdDxzbGlkZXIgOnZhbHVlPVwiY3VyckJhckluZGV4XCIgYmxvY2stc2l6ZT1cIjE1XCIgYWN0aXZlQ29sb3I9XCIjRkZDQzMzXCIgYmFja2dyb3VuZENvbG9yPVwiI0RBRUFGRlwiIDpzdGVwPVwiMVwiXHJcblx0XHRcdFx0Om1heD1cIjEqKGNoYXJ0RGF0YS5sZW5ndGggLSBzd2lwZXJJdGVtTnVtYmVyKVwiIDptaW49XCIwXCIgQGNoYW5nZT1cInNsaWRlckNoYW5nZVwiIC8+XHJcblx0XHQ8L3ZpZXc+XHJcblx0XHR7e2NoYXJ0RGF0YS5sZW5ndGgtc3dpcGVySXRlbU51bWJlcn19XHJcblx0XHQ8Y3VzdG9tLXRhYmJhciA6Y3VycmVudC1wYWdlPVwiMFwiPjwvY3VzdG9tLXRhYmJhcj5cclxuXHQ8L3ZpZXc+XHJcbjwvdGVtcGxhdGU+XHJcblxyXG48c2NyaXB0PlxyXG5cdGV4cG9ydCBkZWZhdWx0IHtcclxuXHRcdGRhdGEoKSB7XHJcblx0XHRcdGNvbnN0IGNoYXJ0WFRleHRTaXplID0gMTJcclxuXHRcdFx0cmV0dXJuIHtcclxuXHRcdFx0XHRzd2lwZXJJdGVtTnVtYmVyOiA1LFxyXG5cdFx0XHRcdGN1cnJlbnRDaXR5SW5kZXg6IDAsXHJcblx0XHRcdFx0Y3VycmVudENvdW50eUluZGV4OiAwLFxyXG5cdFx0XHRcdGNpdHlMaXN0OiBbJ+aIkOmDveW4gicsICfnu7XpmLPluIInLCAn566A6Ziz5biCJywgJ+W+t+mYs+W4gicsICfoh6rotKHluIInLCAn55yJ5bGx5biCJywgJ+W5v+WuieW4gicsICflub/lhYPluIInLCAn6YGC5a6B5biCJ10sXHJcblx0XHRcdFx0Y291bnR5TGlzdDogWyfph5HniZvljLonLCAn5q2m5L6v5Yy6JywgJ+WPjOa1geWMuicsICfmiJDljY7ljLonLCAn6auY5paw5Yy6JywgJ+mdkue+iuWMuicsICflpKnlupzmlrDljLonLCAn6Z2S55m95rGf5Yy6JywgJ+aWsOmDveWMuicsICfpg6vpg73ljLonXSxcclxuXHRcdFx0XHRjaGFydERhdGE6IFt7XHJcblx0XHRcdFx0XHRhcmVhOiAn5oiQ6YO95biCJyxcclxuXHRcdFx0XHRcdHZhbHVlMTogfn4oTWF0aC5yYW5kb20oKSAqIDEwMDApLFxyXG5cdFx0XHRcdFx0dmFsdWUyOiB+fihNYXRoLnJhbmRvbSgpICogMTAwMClcclxuXHRcdFx0XHR9LCB7XHJcblx0XHRcdFx0XHRhcmVhOiAn57u16Ziz5biCJyxcclxuXHRcdFx0XHRcdHZhbHVlMTogMTYwMCxcclxuXHRcdFx0XHRcdHZhbHVlMjogNTBcclxuXHRcdFx0XHR9LCB7XHJcblx0XHRcdFx0XHRhcmVhOiAn566A6Ziz5biCJyxcclxuXHRcdFx0XHRcdHZhbHVlMTogfn4oTWF0aC5yYW5kb20oKSAqIDEwMDApLFxyXG5cdFx0XHRcdFx0dmFsdWUyOiB+fihNYXRoLnJhbmRvbSgpICogMTAwMClcclxuXHRcdFx0XHR9LCB7XHJcblx0XHRcdFx0XHRhcmVhOiAn5b636Ziz5biCJyxcclxuXHRcdFx0XHRcdHZhbHVlMTogfn4oTWF0aC5yYW5kb20oKSAqIDEwMDApLFxyXG5cdFx0XHRcdFx0dmFsdWUyOiB+fihNYXRoLnJhbmRvbSgpICogMTAwMClcclxuXHRcdFx0XHR9LCB7XHJcblx0XHRcdFx0XHRhcmVhOiAn6Ieq6LSh5biCJyxcclxuXHRcdFx0XHRcdHZhbHVlMTogfn4oTWF0aC5yYW5kb20oKSAqIDEwMDApLFxyXG5cdFx0XHRcdFx0dmFsdWUyOiB+fihNYXRoLnJhbmRvbSgpICogMTAwMClcclxuXHRcdFx0XHR9LCB7XHJcblx0XHRcdFx0XHRhcmVhOiAn55yJ5bGx5biCJyxcclxuXHRcdFx0XHRcdHZhbHVlMTogfn4oTWF0aC5yYW5kb20oKSAqIDEwMDApLFxyXG5cdFx0XHRcdFx0dmFsdWUyOiB+fihNYXRoLnJhbmRvbSgpICogMTAwMClcclxuXHRcdFx0XHR9LCB7XHJcblx0XHRcdFx0XHRhcmVhOiAn5bm/5a6J5biCJyxcclxuXHRcdFx0XHRcdHZhbHVlMTogfn4oTWF0aC5yYW5kb20oKSAqIDEwMDApLFxyXG5cdFx0XHRcdFx0dmFsdWUyOiB+fihNYXRoLnJhbmRvbSgpICogMTAwMClcclxuXHRcdFx0XHR9LCB7XHJcblx0XHRcdFx0XHRhcmVhOiAn5bm/5YWD5biCJyxcclxuXHRcdFx0XHRcdHZhbHVlMTogfn4oTWF0aC5yYW5kb20oKSAqIDEwMDApLFxyXG5cdFx0XHRcdFx0dmFsdWUyOiB+fihNYXRoLnJhbmRvbSgpICogMTAwMClcclxuXHRcdFx0XHR9LCB7XHJcblx0XHRcdFx0XHRhcmVhOiAn6YGC5a6B5biCJyxcclxuXHRcdFx0XHRcdHZhbHVlMTogfn4oTWF0aC5yYW5kb20oKSAqIDEwMDApLFxyXG5cdFx0XHRcdFx0dmFsdWUyOiB+fihNYXRoLnJhbmRvbSgpICogMTAwMClcclxuXHRcdFx0XHR9XSxcclxuXHRcdFx0XHRZRGF0YTogW10sXHJcblx0XHRcdFx0Z2FwOiAwLFxyXG5cdFx0XHRcdGNoYXJ0WFRleHRIZWlnaHQ6IGNoYXJ0WFRleHRTaXplICsgMixcclxuXHRcdFx0XHRjaGFydFhUZXh0U2l6ZSxcclxuXHRcdFx0XHRsaW5lTWFyZ2luVG9wOiAxOCxcclxuXHRcdFx0XHRsaW5lSGVpZ2h0OiAxNixcclxuXHRcdFx0XHRsaW5lQm9yZGVySGVpZ2h0OiAxLFxyXG5cdFx0XHRcdGN1cnJCYXJJbmRleDogMCxcclxuXHRcdFx0XHRjdXJyU2VsZWN0ZWRCYXI6IDAsXHJcblx0XHRcdH1cclxuXHRcdH0sXHJcblx0XHRvbkxvYWQoKSB7XHJcblxyXG5cdFx0fSxcclxuXHRcdG1vdW50ZWQoKSB7XHJcblx0XHRcdHRoaXMuZ2V0WURhdGEoKVxyXG5cdFx0fSxcclxuXHRcdG1ldGhvZHM6IHtcclxuXHRcdFx0c2xpZGVyQ2hhbmdlKGV2ZW50KSB7XHJcblx0XHRcdFx0Y29uc29sZS5sb2coZXZlbnQpXHJcblx0XHRcdFx0dGhpcy5jdXJyQmFySW5kZXggPSBldmVudC5kZXRhaWwudmFsdWVcclxuXHRcdFx0fSxcclxuXHRcdFx0Y2xpY2tCYXJJdGVtKGl0ZW0sIGluZGV4KSB7XHJcblx0XHRcdFx0aWYgKGluZGV4IDw9ICh0aGlzLmNoYXJ0RGF0YS5sZW5ndGggLSB0aGlzLnN3aXBlckl0ZW1OdW1iZXIpKSB7XHJcblx0XHRcdFx0XHR0aGlzLmN1cnJCYXJJbmRleCA9IGluZGV4XHJcblx0XHRcdFx0fVxyXG5cdFx0XHRcdHRoaXMuY3VyclNlbGVjdGVkQmFyID0gaW5kZXhcclxuXHRcdFx0fSxcclxuXHRcdFx0Ly8g5Y2V5L2N5o2i566XXHJcblx0XHRcdHB4dG9ycHgocHgpIHtcclxuXHRcdFx0XHQvLyBycHjovaxweFxyXG5cdFx0XHRcdC8vIHVuaS51cHgycHgocnB455qE5YC8KVxyXG5cdFx0XHRcdC8vIHB46L2scnB4XHJcblx0XHRcdFx0Ly8gcHjnmoTlgLwvKHVuaS51cHgycHgoMTApLzEwKVxyXG5cdFx0XHRcdHJldHVybiBweCAvICh1bmkudXB4MnB4KDEwMCkgLyAxMDApXHJcblx0XHRcdH0sXHJcblx0XHRcdGdldFlEYXRhKCkge1xyXG5cdFx0XHRcdGxldCBtYXhTdW1WYWx1ZSA9IDBcclxuXHRcdFx0XHR0aGlzLmNoYXJ0RGF0YS5mb3JFYWNoKCh7XHJcblx0XHRcdFx0XHR2YWx1ZTEsXHJcblx0XHRcdFx0XHR2YWx1ZTJcclxuXHRcdFx0XHR9KSA9PiB7XHJcblx0XHRcdFx0XHRjb25zdCBzdW0gPSB2YWx1ZTEgKyB2YWx1ZTJcclxuXHRcdFx0XHRcdGlmIChzdW0gPiBtYXhTdW1WYWx1ZSkge1xyXG5cdFx0XHRcdFx0XHRtYXhTdW1WYWx1ZSA9IHN1bVxyXG5cdFx0XHRcdFx0fVxyXG5cdFx0XHRcdH0pXHJcblx0XHRcdFx0bGV0IGdhcFxyXG5cdFx0XHRcdGlmIChtYXhTdW1WYWx1ZSAlIDUgPT09IDApIHtcclxuXHRcdFx0XHRcdGdhcCA9IG1heFN1bVZhbHVlIC8gNVxyXG5cdFx0XHRcdH0gZWxzZSB7XHJcblx0XHRcdFx0XHRnYXAgPSB+fihtYXhTdW1WYWx1ZSAvIDUpICsgMVxyXG5cdFx0XHRcdH1cclxuXHRcdFx0XHRjb25zdCBZRGF0YSA9IFtdXHJcblx0XHRcdFx0Zm9yIChsZXQgaSA9IDA7IGkgPD0gNTsgaSsrKSB7XHJcblx0XHRcdFx0XHRZRGF0YS5wdXNoKGkgKiBnYXApXHJcblx0XHRcdFx0fVxyXG5cdFx0XHRcdGNvbnNvbGUubG9nKGdhcCwgbWF4U3VtVmFsdWUpXHJcblx0XHRcdFx0dGhpcy5ZRGF0YSA9IFlEYXRhLnJldmVyc2UoKVxyXG5cdFx0XHRcdHRoaXMuZ2FwID0gZ2FwXHJcblx0XHRcdH0sXHJcblx0XHRcdGJhckNoYW5nZShlKSB7XHJcblx0XHRcdFx0Y29uc29sZS5sb2coZSwgJz09PT09ZScpXHJcblx0XHRcdFx0Y29uc3Qge1xyXG5cdFx0XHRcdFx0ZGV0YWlsXHJcblx0XHRcdFx0fSA9IGVcclxuXHRcdFx0XHR0aGlzLmN1cnJCYXJJbmRleCA9IGRldGFpbC5jdXJyZW50XHJcblx0XHRcdH0sXHJcblx0XHRcdGNpdHlDaGFuZ2UoZSkge1xyXG5cdFx0XHRcdGNvbnN0IHtcclxuXHRcdFx0XHRcdGRldGFpbFxyXG5cdFx0XHRcdH0gPSBlXHJcblx0XHRcdFx0Y29uc29sZS5sb2coZSwgJz09PT09ZScpXHJcblx0XHRcdFx0dGhpcy5jdXJyZW50Q2l0eUluZGV4ID0gZGV0YWlsLmN1cnJlbnRcclxuXHRcdFx0fSxcclxuXHRcdFx0Y2xpY2tDaXR5SXRlbShpdGVtLCBpbmRleCkge1xyXG5cdFx0XHRcdHRoaXMuY3VycmVudENpdHlJbmRleCA9IGluZGV4XHJcblx0XHRcdFx0Ly8g6YeN5paw6I635Y+WY291bnR5TGlzdFxyXG5cdFx0XHRcdHRoaXMuY3VycmVudENvdW50eUluZGV4ID0gMFxyXG5cclxuXHRcdFx0fSxcclxuXHRcdFx0Y291bnR5Q2hhbmdlKGUpIHtcclxuXHRcdFx0XHRjb25zdCB7XHJcblx0XHRcdFx0XHRkZXRhaWxcclxuXHRcdFx0XHR9ID0gZVxyXG5cdFx0XHRcdHRoaXMuY3VycmVudENvdW50eUluZGV4ID0gZGV0YWlsLmN1cnJlbnRcclxuXHRcdFx0fSxcclxuXHRcdFx0Y2xpY2tDb3VudHlJdGVtKGl0ZW0sIGluZGV4KSB7XHJcblx0XHRcdFx0dGhpcy5jdXJyZW50Q291bnR5SW5kZXggPSBpbmRleFxyXG5cdFx0XHR9XHJcblx0XHR9XHJcblx0fVxyXG48L3NjcmlwdD5cclxuXHJcbjxzdHlsZT5cclxuXHQuc2xpZGVyLWJveCB7XHJcblx0XHRwYWRkaW5nOiAxMHJweCAzMHJweDtcclxuXHRcdG1hcmdpbjogNDBycHggMjBycHg7XHJcblx0XHRib3JkZXI6IDJycHggc29saWQgc2t5Ymx1ZTtcclxuXHRcdGJvcmRlci1yYWRpdXM6IDQwcnB4O1xyXG5cdH1cclxuXHJcblx0LnNsaWRlci1ib3ggdW5pLXNsaWRlciB7XHJcblx0XHRtYXJnaW46IDA7XHJcblx0fVxyXG5cclxuXHQvZGVlcC8gdW5pLXNsaWRlciAudW5pLXNsaWRlci10aHVtYiB7XHJcblx0XHRib3gtc2hhZG93OiAwIDAgMTJycHggIzI5NkZGRjtcclxuXHR9XHJcblxyXG5cclxuXHQuY2hhcnQtYm94IHtcclxuXHRcdGJvcmRlcjogMnJweCBzb2xpZCBwaW5rO1xyXG5cdFx0bWFyZ2luOiAxMHJweDtcclxuXHRcdHBvc2l0aW9uOiByZWxhdGl2ZTtcclxuXHRcdGhlaWdodDogMTAwJTtcclxuXHR9XHJcblxyXG5cdC5jaGFydC1iYXIge1xyXG5cdFx0aGVpZ2h0OiAxMDAlO1xyXG5cdFx0cG9zaXRpb246IGFic29sdXRlO1xyXG5cdFx0d2lkdGg6IDgwJTtcclxuXHRcdGxlZnQ6IDEwMHJweDtcclxuXHR9XHJcblxyXG5cdC5jaGFydC1iYXIgdW5pLXN3aXBlci1pdGVtIHtcclxuXHRcdGRpc3BsYXk6IGZsZXg7XHJcblx0XHRhbGlnbi1pdGVtczogZmxleC1lbmQ7XHJcblx0XHRvdmVyZmxvdzogdW5zZXQ7XHJcblx0fVxyXG5cclxuXHQuY2hhcnQtYmFyLWNvbnRlbnQge1xyXG5cdFx0d2lkdGg6IDg1JTtcclxuXHRcdGRpc3BsYXk6IGZsZXg7XHJcblx0XHRhbGlnbi1pdGVtczogY2VudGVyO1xyXG5cdFx0ZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcclxuXHR9XHJcblx0LmNoYXJ0LWJhci10b3Age1xyXG5cdFx0d2lkdGg6IDMwcnB4O1xyXG5cdFx0YmFja2dyb3VuZDogI2ZmNzQ0MjtcclxuXHRcdGJvcmRlci1yYWRpdXM6IDEwcnB4IDEwcnB4IDBweCAwcHg7XHJcblx0XHRib3gtc2hhZG93OiAwcHggMHB4IDhycHggMHB4ICNmZjc0NDI7IFxyXG5cdH1cclxuXHQuY2hhcnQtYmFyLWJvdHRvbSB7XHJcblx0XHR3aWR0aDogMzBycHg7XHJcblx0XHRiYWNrZ3JvdW5kOiAjZmZjZDAwO1xyXG5cdFx0Ym9yZGVyLXJhZGl1czogMHB4IDBweCAxMHJweCAxMHJweDtcclxuXHRcdGJveC1zaGFkb3c6IDBweCAwcHggOHJweCAwcHggI2ZmY2QwMDsgXHJcblx0fVxyXG5cdC5jaGFydC1iYXItY29udGVudC1hY3RpdmVkOm50aC1jaGlsZCgxKSB7XHJcblx0XHR0cmFuc2Zvcm06IHRyYW5zbGF0ZVgoNHJweCkgdHJhbnNsYXRlWSgtNHJweCk7XHJcblx0fVxyXG5cclxuXHQuY2hhcnQtYmFyLWNvbnRlbnQtYWN0aXZlZCAuY2hhcnQteC10ZXh0IHtcclxuXHRcdHdpZHRoOiA5NSU7XHJcblx0XHR0ZXh0LWFsaWduOiBjZW50ZXI7XHJcblx0fVxyXG5cclxuXHQuY2hhcnQtYmFyLWNvbnRlbnQtYWN0aXZlZCB7XHJcblx0XHRiYWNrZ3JvdW5kOiAjZmZmZmZmO1xyXG5cdFx0Ym9yZGVyLXJhZGl1czogMjBycHg7XHJcblx0XHRib3gtc2hhZG93OiAwcHggMHB4IDE2cnB4IDBweCAjYzJjZWRmO1xyXG5cdH1cclxuXHJcblx0LmNoYXJ0LWJhciB1bmktc3dpcGVyIHtcclxuXHRcdGhlaWdodDogMTAwJTtcclxuXHRcdG92ZXJmbG93OiB1bnNldDtcclxuXHR9XHJcblx0LmNoYXJ0LWxpbmUtYm94IHtcclxuXHR9XHJcblx0LmNoYXJ0LWxpbmUge1xyXG5cdFx0ZGlzcGxheTogZmxleDtcclxuXHRcdGFsaWduLWl0ZW1zOiBjZW50ZXI7XHJcblx0fVxyXG5cclxuXHQuY2hhcnQtbGluZS15IHtcclxuXHRcdHdpZHRoOiA5MiU7XHJcblx0XHRiYWNrZ3JvdW5kLWNvbG9yOiAjQ0VFM0ZGO1xyXG5cdH1cclxuXHJcblx0LmNoYXJ0LWxpbmUtdGV4dCB7XHJcblx0XHR0ZXh0LWFsaWduOiByaWdodDtcclxuXHRcdHdpZHRoOiA0MHJweDtcclxuXHRcdG1hcmdpbi1yaWdodDogMTBycHg7XHJcblx0XHRjb2xvcjogI2MyY2VkZjtcclxuXHRcdGZvbnQtc2l6ZTogMTZycHg7XHJcblx0fVxyXG5cclxuXHQuY2hhcnQtYmFyLXRleHQge1xyXG5cdFx0Zm9udC1zaXplOiAxNnJweDtcclxuXHR9XHJcblxyXG5cclxuXHQuc3dpcGVyVmlldyB7XHJcblx0XHR3aWR0aDogMTAwJTtcclxuXHRcdGhlaWdodDogMTAwcnB4O1xyXG5cdH1cclxuXHJcblx0LmNvbG9yIHtcclxuXHRcdGNvbG9yOiByZWRcclxuXHR9XHJcblxyXG5cdC5ibG9jayB7XHJcblx0XHRoZWlnaHQ6IDEwMHJweDtcclxuXHRcdGxpbmUtaGVpZ2h0OiAxMDBycHg7XHJcblx0XHRiYWNrZ3JvdW5kLWNvbG9yOiBhcXVhbWFyaW5lO1xyXG5cdFx0dGV4dC1hbGlnbjogY2VudGVyO1xyXG5cdH1cclxuPC9zdHlsZT5cbiJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///6\n");
 
 /***/ }),
 /* 7 */
@@ -734,9 +775,9 @@ function normalizeComponent (
 
 /***/ }),
 /* 9 */
-/*!************************************************************************!*\
-  !*** D:/Projects/my/customBar/pages/discount/discount.vue?mpType=page ***!
-  \************************************************************************/
+/*!***************************************************************************!*\
+  !*** D:/Projects/my/demo-uni-app/pages/discount/discount.vue?mpType=page ***!
+  \***************************************************************************/
 /*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -745,9 +786,9 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _dis
 
 /***/ }),
 /* 10 */
-/*!******************************************************************************************************!*\
-  !*** D:/Projects/my/customBar/pages/discount/discount.vue?vue&type=template&id=1554a3f6&mpType=page ***!
-  \******************************************************************************************************/
+/*!*********************************************************************************************************!*\
+  !*** D:/Projects/my/demo-uni-app/pages/discount/discount.vue?vue&type=template&id=1554a3f6&mpType=page ***!
+  \*********************************************************************************************************/
 /*! exports provided: render, staticRenderFns, recyclableRender, components */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -766,9 +807,9 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 /* 11 */
-/*!**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--10-0!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/filter-modules-template.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/page-meta.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!D:/Projects/my/customBar/pages/discount/discount.vue?vue&type=template&id=1554a3f6&mpType=page ***!
-  \**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*!*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--10-0!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/filter-modules-template.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/page-meta.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!D:/Projects/my/demo-uni-app/pages/discount/discount.vue?vue&type=template&id=1554a3f6&mpType=page ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns, recyclableRender, components */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -797,9 +838,9 @@ render._withStripped = true
 
 /***/ }),
 /* 12 */
-/*!************************************************************************************************!*\
-  !*** D:/Projects/my/customBar/pages/discount/discount.vue?vue&type=script&lang=js&mpType=page ***!
-  \************************************************************************************************/
+/*!***************************************************************************************************!*\
+  !*** D:/Projects/my/demo-uni-app/pages/discount/discount.vue?vue&type=script&lang=js&mpType=page ***!
+  \***************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -808,9 +849,9 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _Pro
 
 /***/ }),
 /* 13 */
-/*!*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--6-1!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/using-components.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!D:/Projects/my/customBar/pages/discount/discount.vue?vue&type=script&lang=js&mpType=page ***!
-  \*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--6-1!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/using-components.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!D:/Projects/my/demo-uni-app/pages/discount/discount.vue?vue&type=script&lang=js&mpType=page ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -819,9 +860,9 @@ eval("Object.defineProperty(exports, \"__esModule\", { value: true });exports.de
 
 /***/ }),
 /* 14 */
-/*!****************************************************************!*\
-  !*** D:/Projects/my/customBar/pages/code/code.vue?mpType=page ***!
-  \****************************************************************/
+/*!*******************************************************************!*\
+  !*** D:/Projects/my/demo-uni-app/pages/code/code.vue?mpType=page ***!
+  \*******************************************************************/
 /*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -830,9 +871,9 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _cod
 
 /***/ }),
 /* 15 */
-/*!**********************************************************************************************!*\
-  !*** D:/Projects/my/customBar/pages/code/code.vue?vue&type=template&id=b7efd514&mpType=page ***!
-  \**********************************************************************************************/
+/*!*************************************************************************************************!*\
+  !*** D:/Projects/my/demo-uni-app/pages/code/code.vue?vue&type=template&id=b7efd514&mpType=page ***!
+  \*************************************************************************************************/
 /*! exports provided: render, staticRenderFns, recyclableRender, components */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -851,9 +892,9 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 /* 16 */
-/*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--10-0!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/filter-modules-template.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/page-meta.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!D:/Projects/my/customBar/pages/code/code.vue?vue&type=template&id=b7efd514&mpType=page ***!
-  \**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*!*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--10-0!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/filter-modules-template.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/page-meta.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!D:/Projects/my/demo-uni-app/pages/code/code.vue?vue&type=template&id=b7efd514&mpType=page ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns, recyclableRender, components */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -882,9 +923,9 @@ render._withStripped = true
 
 /***/ }),
 /* 17 */
-/*!****************************************************************************************!*\
-  !*** D:/Projects/my/customBar/pages/code/code.vue?vue&type=script&lang=js&mpType=page ***!
-  \****************************************************************************************/
+/*!*******************************************************************************************!*\
+  !*** D:/Projects/my/demo-uni-app/pages/code/code.vue?vue&type=script&lang=js&mpType=page ***!
+  \*******************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -893,9 +934,9 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _Pro
 
 /***/ }),
 /* 18 */
-/*!*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--6-1!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/using-components.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!D:/Projects/my/customBar/pages/code/code.vue?vue&type=script&lang=js&mpType=page ***!
-  \*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--6-1!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/using-components.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!D:/Projects/my/demo-uni-app/pages/code/code.vue?vue&type=script&lang=js&mpType=page ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -904,9 +945,9 @@ eval("Object.defineProperty(exports, \"__esModule\", { value: true });exports.de
 
 /***/ }),
 /* 19 */
-/*!********************************************************************!*\
-  !*** D:/Projects/my/customBar/pages/search/search.vue?mpType=page ***!
-  \********************************************************************/
+/*!***********************************************************************!*\
+  !*** D:/Projects/my/demo-uni-app/pages/search/search.vue?mpType=page ***!
+  \***********************************************************************/
 /*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -915,9 +956,9 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sea
 
 /***/ }),
 /* 20 */
-/*!**************************************************************************************************!*\
-  !*** D:/Projects/my/customBar/pages/search/search.vue?vue&type=template&id=6337d5d4&mpType=page ***!
-  \**************************************************************************************************/
+/*!*****************************************************************************************************!*\
+  !*** D:/Projects/my/demo-uni-app/pages/search/search.vue?vue&type=template&id=6337d5d4&mpType=page ***!
+  \*****************************************************************************************************/
 /*! exports provided: render, staticRenderFns, recyclableRender, components */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -936,9 +977,9 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 /* 21 */
-/*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--10-0!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/filter-modules-template.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/page-meta.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!D:/Projects/my/customBar/pages/search/search.vue?vue&type=template&id=6337d5d4&mpType=page ***!
-  \******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*!*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--10-0!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/filter-modules-template.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/page-meta.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!D:/Projects/my/demo-uni-app/pages/search/search.vue?vue&type=template&id=6337d5d4&mpType=page ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns, recyclableRender, components */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -967,9 +1008,9 @@ render._withStripped = true
 
 /***/ }),
 /* 22 */
-/*!********************************************************************************************!*\
-  !*** D:/Projects/my/customBar/pages/search/search.vue?vue&type=script&lang=js&mpType=page ***!
-  \********************************************************************************************/
+/*!***********************************************************************************************!*\
+  !*** D:/Projects/my/demo-uni-app/pages/search/search.vue?vue&type=script&lang=js&mpType=page ***!
+  \***********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -978,9 +1019,9 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _Pro
 
 /***/ }),
 /* 23 */
-/*!*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--6-1!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/using-components.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!D:/Projects/my/customBar/pages/search/search.vue?vue&type=script&lang=js&mpType=page ***!
-  \*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*!****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--6-1!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/using-components.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!D:/Projects/my/demo-uni-app/pages/search/search.vue?vue&type=script&lang=js&mpType=page ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -989,9 +1030,9 @@ eval("Object.defineProperty(exports, \"__esModule\", { value: true });exports.de
 
 /***/ }),
 /* 24 */
-/*!****************************************************************!*\
-  !*** D:/Projects/my/customBar/pages/mine/mine.vue?mpType=page ***!
-  \****************************************************************/
+/*!*******************************************************************!*\
+  !*** D:/Projects/my/demo-uni-app/pages/mine/mine.vue?mpType=page ***!
+  \*******************************************************************/
 /*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -1000,9 +1041,9 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _min
 
 /***/ }),
 /* 25 */
-/*!**********************************************************************************************!*\
-  !*** D:/Projects/my/customBar/pages/mine/mine.vue?vue&type=template&id=984eb594&mpType=page ***!
-  \**********************************************************************************************/
+/*!*************************************************************************************************!*\
+  !*** D:/Projects/my/demo-uni-app/pages/mine/mine.vue?vue&type=template&id=984eb594&mpType=page ***!
+  \*************************************************************************************************/
 /*! exports provided: render, staticRenderFns, recyclableRender, components */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -1021,9 +1062,9 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 /* 26 */
-/*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--10-0!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/filter-modules-template.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/page-meta.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!D:/Projects/my/customBar/pages/mine/mine.vue?vue&type=template&id=984eb594&mpType=page ***!
-  \**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*!*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--10-0!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/filter-modules-template.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/page-meta.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!D:/Projects/my/demo-uni-app/pages/mine/mine.vue?vue&type=template&id=984eb594&mpType=page ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns, recyclableRender, components */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -1052,9 +1093,9 @@ render._withStripped = true
 
 /***/ }),
 /* 27 */
-/*!****************************************************************************************!*\
-  !*** D:/Projects/my/customBar/pages/mine/mine.vue?vue&type=script&lang=js&mpType=page ***!
-  \****************************************************************************************/
+/*!*******************************************************************************************!*\
+  !*** D:/Projects/my/demo-uni-app/pages/mine/mine.vue?vue&type=script&lang=js&mpType=page ***!
+  \*******************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -1063,9 +1104,9 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _Pro
 
 /***/ }),
 /* 28 */
-/*!*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--6-1!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/using-components.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!D:/Projects/my/customBar/pages/mine/mine.vue?vue&type=script&lang=js&mpType=page ***!
-  \*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--6-1!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/using-components.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!D:/Projects/my/demo-uni-app/pages/mine/mine.vue?vue&type=script&lang=js&mpType=page ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1074,20 +1115,20 @@ eval("Object.defineProperty(exports, \"__esModule\", { value: true });exports.de
 
 /***/ }),
 /* 29 */
-/*!*******************************************************************!*\
-  !*** D:/Projects/my/customBar/wxcomponents/vant/slider/index.vue ***!
-  \*******************************************************************/
+/*!**********************************************************************!*\
+  !*** D:/Projects/my/demo-uni-app/wxcomponents/vant/slider/index.vue ***!
+  \**********************************************************************/
 /*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _index_vue_vue_type_template_id_006dbb10_filter_modules_eyJ1dGlscyI6eyJ0eXBlIjoid3hzIiwiY29udGVudCI6IiIsInN0YXJ0IjoxMzcyLCJhdHRycyI6eyJzcmMiOiIuLi93eHMvdXRpbHMud3hzIiwibW9kdWxlIjoidXRpbHMifSwiZW5kIjoxMzcyfSwic3R5bGUiOnsidHlwZSI6Ind4cyIsImNvbnRlbnQiOiIiLCJzdGFydCI6MTQyMSwiYXR0cnMiOnsic3JjIjoiLi4vd3hzL3N0eWxlLnd4cyIsIm1vZHVsZSI6InN0eWxlIn0sImVuZCI6MTQyMX19___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.vue?vue&type=template&id=006dbb10&filter-modules=eyJ1dGlscyI6eyJ0eXBlIjoid3hzIiwiY29udGVudCI6IiIsInN0YXJ0IjoxMzcyLCJhdHRycyI6eyJzcmMiOiIuLi93eHMvdXRpbHMud3hzIiwibW9kdWxlIjoidXRpbHMifSwiZW5kIjoxMzcyfSwic3R5bGUiOnsidHlwZSI6Ind4cyIsImNvbnRlbnQiOiIiLCJzdGFydCI6MTQyMSwiYXR0cnMiOnsic3JjIjoiLi4vd3hzL3N0eWxlLnd4cyIsIm1vZHVsZSI6InN0eWxlIn0sImVuZCI6MTQyMX19& */ 30);\n/* harmony import */ var _index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.vue?vue&type=script&lang=js& */ 32);\n/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__[key]; }) }(__WEBPACK_IMPORT_KEY__));\n/* harmony import */ var _Program_Files_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../../Program Files/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/runtime/componentNormalizer.js */ 8);\n/* harmony import */ var _wxs_utils_wxs_vue_type_custom_index_0_blockType_wxs_issuerPath_D_3A_5CProjects_5Cmy_5CcustomBar_5Cwxcomponents_5Cvant_5Cslider_5Cindex_vue_module_utils__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../wxs/utils.wxs?vue&type=custom&index=0&blockType=wxs&issuerPath=D%3A%5CProjects%5Cmy%5CcustomBar%5Cwxcomponents%5Cvant%5Cslider%5Cindex.vue&module=utils */ 43);\n/* harmony import */ var _wxs_style_wxs_vue_type_custom_index_1_blockType_wxs_issuerPath_D_3A_5CProjects_5Cmy_5CcustomBar_5Cwxcomponents_5Cvant_5Cslider_5Cindex_vue_module_style__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../wxs/style.wxs?vue&type=custom&index=1&blockType=wxs&issuerPath=D%3A%5CProjects%5Cmy%5CcustomBar%5Cwxcomponents%5Cvant%5Cslider%5Cindex.vue&module=style */ 51);\n\nvar renderjs\n\n\n\n\n/* normalize component */\n\nvar component = Object(_Program_Files_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__[\"default\"])(\n  _index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__[\"default\"],\n  _index_vue_vue_type_template_id_006dbb10_filter_modules_eyJ1dGlscyI6eyJ0eXBlIjoid3hzIiwiY29udGVudCI6IiIsInN0YXJ0IjoxMzcyLCJhdHRycyI6eyJzcmMiOiIuLi93eHMvdXRpbHMud3hzIiwibW9kdWxlIjoidXRpbHMifSwiZW5kIjoxMzcyfSwic3R5bGUiOnsidHlwZSI6Ind4cyIsImNvbnRlbnQiOiIiLCJzdGFydCI6MTQyMSwiYXR0cnMiOnsic3JjIjoiLi4vd3hzL3N0eWxlLnd4cyIsIm1vZHVsZSI6InN0eWxlIn0sImVuZCI6MTQyMX19___WEBPACK_IMPORTED_MODULE_0__[\"render\"],\n  _index_vue_vue_type_template_id_006dbb10_filter_modules_eyJ1dGlscyI6eyJ0eXBlIjoid3hzIiwiY29udGVudCI6IiIsInN0YXJ0IjoxMzcyLCJhdHRycyI6eyJzcmMiOiIuLi93eHMvdXRpbHMud3hzIiwibW9kdWxlIjoidXRpbHMifSwiZW5kIjoxMzcyfSwic3R5bGUiOnsidHlwZSI6Ind4cyIsImNvbnRlbnQiOiIiLCJzdGFydCI6MTQyMSwiYXR0cnMiOnsic3JjIjoiLi4vd3hzL3N0eWxlLnd4cyIsIm1vZHVsZSI6InN0eWxlIn0sImVuZCI6MTQyMX19___WEBPACK_IMPORTED_MODULE_0__[\"staticRenderFns\"],\n  false,\n  null,\n  null,\n  null,\n  false,\n  _index_vue_vue_type_template_id_006dbb10_filter_modules_eyJ1dGlscyI6eyJ0eXBlIjoid3hzIiwiY29udGVudCI6IiIsInN0YXJ0IjoxMzcyLCJhdHRycyI6eyJzcmMiOiIuLi93eHMvdXRpbHMud3hzIiwibW9kdWxlIjoidXRpbHMifSwiZW5kIjoxMzcyfSwic3R5bGUiOnsidHlwZSI6Ind4cyIsImNvbnRlbnQiOiIiLCJzdGFydCI6MTQyMSwiYXR0cnMiOnsic3JjIjoiLi4vd3hzL3N0eWxlLnd4cyIsIm1vZHVsZSI6InN0eWxlIn0sImVuZCI6MTQyMX19___WEBPACK_IMPORTED_MODULE_0__[\"components\"],\n  renderjs\n)\n\n/* custom blocks */\n\nif (typeof _wxs_utils_wxs_vue_type_custom_index_0_blockType_wxs_issuerPath_D_3A_5CProjects_5Cmy_5CcustomBar_5Cwxcomponents_5Cvant_5Cslider_5Cindex_vue_module_utils__WEBPACK_IMPORTED_MODULE_3__[\"default\"] === 'function') Object(_wxs_utils_wxs_vue_type_custom_index_0_blockType_wxs_issuerPath_D_3A_5CProjects_5Cmy_5CcustomBar_5Cwxcomponents_5Cvant_5Cslider_5Cindex_vue_module_utils__WEBPACK_IMPORTED_MODULE_3__[\"default\"])(component)\n\nif (typeof _wxs_style_wxs_vue_type_custom_index_1_blockType_wxs_issuerPath_D_3A_5CProjects_5Cmy_5CcustomBar_5Cwxcomponents_5Cvant_5Cslider_5Cindex_vue_module_style__WEBPACK_IMPORTED_MODULE_4__[\"default\"] === 'function') Object(_wxs_style_wxs_vue_type_custom_index_1_blockType_wxs_issuerPath_D_3A_5CProjects_5Cmy_5CcustomBar_5Cwxcomponents_5Cvant_5Cslider_5Cindex_vue_module_style__WEBPACK_IMPORTED_MODULE_4__[\"default\"])(component)\n\ncomponent.options.__file = \"wxcomponents/vant/slider/index.vue\"\n/* harmony default export */ __webpack_exports__[\"default\"] = (component.exports);//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbbnVsbF0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQThhO0FBQzlhO0FBQ3lEO0FBQ0w7OztBQUdwRDtBQUN1TDtBQUN2TCxnQkFBZ0IsMkxBQVU7QUFDMUIsRUFBRSwyRUFBTTtBQUNSLEVBQUUsNFlBQU07QUFDUixFQUFFLHFaQUFlO0FBQ2pCO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQSxFQUFFLGdaQUFVO0FBQ1o7QUFDQTs7QUFFQTtBQUMrSztBQUMvSyxXQUFXLGdNQUFNLGlCQUFpQix3TUFBTTtBQUN1STtBQUMvSyxXQUFXLGdNQUFNLGlCQUFpQix3TUFBTTs7QUFFeEM7QUFDZSxnRiIsImZpbGUiOiIyOS5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IHJlbmRlciwgc3RhdGljUmVuZGVyRm5zLCByZWN5Y2xhYmxlUmVuZGVyLCBjb21wb25lbnRzIH0gZnJvbSBcIi4vaW5kZXgudnVlP3Z1ZSZ0eXBlPXRlbXBsYXRlJmlkPTAwNmRiYjEwJmZpbHRlci1tb2R1bGVzPWV5SjFkR2xzY3lJNmV5SjBlWEJsSWpvaWQzaHpJaXdpWTI5dWRHVnVkQ0k2SWlJc0luTjBZWEowSWpveE16Y3lMQ0poZEhSeWN5STZleUp6Y21NaU9pSXVMaTkzZUhNdmRYUnBiSE11ZDNoeklpd2liVzlrZFd4bElqb2lkWFJwYkhNaWZTd2laVzVrSWpveE16Y3lmU3dpYzNSNWJHVWlPbnNpZEhsd1pTSTZJbmQ0Y3lJc0ltTnZiblJsYm5RaU9pSWlMQ0p6ZEdGeWRDSTZNVFF5TVN3aVlYUjBjbk1pT25zaWMzSmpJam9pTGk0dmQzaHpMM04wZVd4bExuZDRjeUlzSW0xdlpIVnNaU0k2SW5OMGVXeGxJbjBzSW1WdVpDSTZNVFF5TVgxOSZcIlxudmFyIHJlbmRlcmpzXG5pbXBvcnQgc2NyaXB0IGZyb20gXCIuL2luZGV4LnZ1ZT92dWUmdHlwZT1zY3JpcHQmbGFuZz1qcyZcIlxuZXhwb3J0ICogZnJvbSBcIi4vaW5kZXgudnVlP3Z1ZSZ0eXBlPXNjcmlwdCZsYW5nPWpzJlwiXG5cblxuLyogbm9ybWFsaXplIGNvbXBvbmVudCAqL1xuaW1wb3J0IG5vcm1hbGl6ZXIgZnJvbSBcIiEuLi8uLi8uLi8uLi8uLi8uLi9Qcm9ncmFtIEZpbGVzL0hCdWlsZGVyWC9wbHVnaW5zL3VuaWFwcC1jbGkvbm9kZV9tb2R1bGVzL0BkY2xvdWRpby92dWUtY2xpLXBsdWdpbi11bmkvcGFja2FnZXMvdnVlLWxvYWRlci9saWIvcnVudGltZS9jb21wb25lbnROb3JtYWxpemVyLmpzXCJcbnZhciBjb21wb25lbnQgPSBub3JtYWxpemVyKFxuICBzY3JpcHQsXG4gIHJlbmRlcixcbiAgc3RhdGljUmVuZGVyRm5zLFxuICBmYWxzZSxcbiAgbnVsbCxcbiAgbnVsbCxcbiAgbnVsbCxcbiAgZmFsc2UsXG4gIGNvbXBvbmVudHMsXG4gIHJlbmRlcmpzXG4pXG5cbi8qIGN1c3RvbSBibG9ja3MgKi9cbmltcG9ydCBibG9jazAgZnJvbSBcIi4uL3d4cy91dGlscy53eHM/dnVlJnR5cGU9Y3VzdG9tJmluZGV4PTAmYmxvY2tUeXBlPXd4cyZpc3N1ZXJQYXRoPUQlM0ElNUNQcm9qZWN0cyU1Q215JTVDY3VzdG9tQmFyJTVDd3hjb21wb25lbnRzJTVDdmFudCU1Q3NsaWRlciU1Q2luZGV4LnZ1ZSZtb2R1bGU9dXRpbHNcIlxuaWYgKHR5cGVvZiBibG9jazAgPT09ICdmdW5jdGlvbicpIGJsb2NrMChjb21wb25lbnQpXG5pbXBvcnQgYmxvY2sxIGZyb20gXCIuLi93eHMvc3R5bGUud3hzP3Z1ZSZ0eXBlPWN1c3RvbSZpbmRleD0xJmJsb2NrVHlwZT13eHMmaXNzdWVyUGF0aD1EJTNBJTVDUHJvamVjdHMlNUNteSU1Q2N1c3RvbUJhciU1Q3d4Y29tcG9uZW50cyU1Q3ZhbnQlNUNzbGlkZXIlNUNpbmRleC52dWUmbW9kdWxlPXN0eWxlXCJcbmlmICh0eXBlb2YgYmxvY2sxID09PSAnZnVuY3Rpb24nKSBibG9jazEoY29tcG9uZW50KVxuXG5jb21wb25lbnQub3B0aW9ucy5fX2ZpbGUgPSBcInd4Y29tcG9uZW50cy92YW50L3NsaWRlci9pbmRleC52dWVcIlxuZXhwb3J0IGRlZmF1bHQgY29tcG9uZW50LmV4cG9ydHMiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///29\n");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _index_vue_vue_type_template_id_006dbb10_filter_modules_eyJ1dGlscyI6eyJ0eXBlIjoid3hzIiwiY29udGVudCI6IiIsInN0YXJ0IjoxMzcyLCJhdHRycyI6eyJzcmMiOiIuLi93eHMvdXRpbHMud3hzIiwibW9kdWxlIjoidXRpbHMifSwiZW5kIjoxMzcyfSwic3R5bGUiOnsidHlwZSI6Ind4cyIsImNvbnRlbnQiOiIiLCJzdGFydCI6MTQyMSwiYXR0cnMiOnsic3JjIjoiLi4vd3hzL3N0eWxlLnd4cyIsIm1vZHVsZSI6InN0eWxlIn0sImVuZCI6MTQyMX19___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.vue?vue&type=template&id=006dbb10&filter-modules=eyJ1dGlscyI6eyJ0eXBlIjoid3hzIiwiY29udGVudCI6IiIsInN0YXJ0IjoxMzcyLCJhdHRycyI6eyJzcmMiOiIuLi93eHMvdXRpbHMud3hzIiwibW9kdWxlIjoidXRpbHMifSwiZW5kIjoxMzcyfSwic3R5bGUiOnsidHlwZSI6Ind4cyIsImNvbnRlbnQiOiIiLCJzdGFydCI6MTQyMSwiYXR0cnMiOnsic3JjIjoiLi4vd3hzL3N0eWxlLnd4cyIsIm1vZHVsZSI6InN0eWxlIn0sImVuZCI6MTQyMX19& */ 30);\n/* harmony import */ var _index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.vue?vue&type=script&lang=js& */ 32);\n/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__[key]; }) }(__WEBPACK_IMPORT_KEY__));\n/* harmony import */ var _Program_Files_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../../Program Files/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/runtime/componentNormalizer.js */ 8);\n/* harmony import */ var _wxs_utils_wxs_vue_type_custom_index_0_blockType_wxs_issuerPath_D_3A_5CProjects_5Cmy_5Cdemo_uni_app_5Cwxcomponents_5Cvant_5Cslider_5Cindex_vue_module_utils__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../wxs/utils.wxs?vue&type=custom&index=0&blockType=wxs&issuerPath=D%3A%5CProjects%5Cmy%5Cdemo-uni-app%5Cwxcomponents%5Cvant%5Cslider%5Cindex.vue&module=utils */ 43);\n/* harmony import */ var _wxs_style_wxs_vue_type_custom_index_1_blockType_wxs_issuerPath_D_3A_5CProjects_5Cmy_5Cdemo_uni_app_5Cwxcomponents_5Cvant_5Cslider_5Cindex_vue_module_style__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../wxs/style.wxs?vue&type=custom&index=1&blockType=wxs&issuerPath=D%3A%5CProjects%5Cmy%5Cdemo-uni-app%5Cwxcomponents%5Cvant%5Cslider%5Cindex.vue&module=style */ 51);\n\nvar renderjs\n\n\n\n\n/* normalize component */\n\nvar component = Object(_Program_Files_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__[\"default\"])(\n  _index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__[\"default\"],\n  _index_vue_vue_type_template_id_006dbb10_filter_modules_eyJ1dGlscyI6eyJ0eXBlIjoid3hzIiwiY29udGVudCI6IiIsInN0YXJ0IjoxMzcyLCJhdHRycyI6eyJzcmMiOiIuLi93eHMvdXRpbHMud3hzIiwibW9kdWxlIjoidXRpbHMifSwiZW5kIjoxMzcyfSwic3R5bGUiOnsidHlwZSI6Ind4cyIsImNvbnRlbnQiOiIiLCJzdGFydCI6MTQyMSwiYXR0cnMiOnsic3JjIjoiLi4vd3hzL3N0eWxlLnd4cyIsIm1vZHVsZSI6InN0eWxlIn0sImVuZCI6MTQyMX19___WEBPACK_IMPORTED_MODULE_0__[\"render\"],\n  _index_vue_vue_type_template_id_006dbb10_filter_modules_eyJ1dGlscyI6eyJ0eXBlIjoid3hzIiwiY29udGVudCI6IiIsInN0YXJ0IjoxMzcyLCJhdHRycyI6eyJzcmMiOiIuLi93eHMvdXRpbHMud3hzIiwibW9kdWxlIjoidXRpbHMifSwiZW5kIjoxMzcyfSwic3R5bGUiOnsidHlwZSI6Ind4cyIsImNvbnRlbnQiOiIiLCJzdGFydCI6MTQyMSwiYXR0cnMiOnsic3JjIjoiLi4vd3hzL3N0eWxlLnd4cyIsIm1vZHVsZSI6InN0eWxlIn0sImVuZCI6MTQyMX19___WEBPACK_IMPORTED_MODULE_0__[\"staticRenderFns\"],\n  false,\n  null,\n  null,\n  null,\n  false,\n  _index_vue_vue_type_template_id_006dbb10_filter_modules_eyJ1dGlscyI6eyJ0eXBlIjoid3hzIiwiY29udGVudCI6IiIsInN0YXJ0IjoxMzcyLCJhdHRycyI6eyJzcmMiOiIuLi93eHMvdXRpbHMud3hzIiwibW9kdWxlIjoidXRpbHMifSwiZW5kIjoxMzcyfSwic3R5bGUiOnsidHlwZSI6Ind4cyIsImNvbnRlbnQiOiIiLCJzdGFydCI6MTQyMSwiYXR0cnMiOnsic3JjIjoiLi4vd3hzL3N0eWxlLnd4cyIsIm1vZHVsZSI6InN0eWxlIn0sImVuZCI6MTQyMX19___WEBPACK_IMPORTED_MODULE_0__[\"components\"],\n  renderjs\n)\n\n/* custom blocks */\n\nif (typeof _wxs_utils_wxs_vue_type_custom_index_0_blockType_wxs_issuerPath_D_3A_5CProjects_5Cmy_5Cdemo_uni_app_5Cwxcomponents_5Cvant_5Cslider_5Cindex_vue_module_utils__WEBPACK_IMPORTED_MODULE_3__[\"default\"] === 'function') Object(_wxs_utils_wxs_vue_type_custom_index_0_blockType_wxs_issuerPath_D_3A_5CProjects_5Cmy_5Cdemo_uni_app_5Cwxcomponents_5Cvant_5Cslider_5Cindex_vue_module_utils__WEBPACK_IMPORTED_MODULE_3__[\"default\"])(component)\n\nif (typeof _wxs_style_wxs_vue_type_custom_index_1_blockType_wxs_issuerPath_D_3A_5CProjects_5Cmy_5Cdemo_uni_app_5Cwxcomponents_5Cvant_5Cslider_5Cindex_vue_module_style__WEBPACK_IMPORTED_MODULE_4__[\"default\"] === 'function') Object(_wxs_style_wxs_vue_type_custom_index_1_blockType_wxs_issuerPath_D_3A_5CProjects_5Cmy_5Cdemo_uni_app_5Cwxcomponents_5Cvant_5Cslider_5Cindex_vue_module_style__WEBPACK_IMPORTED_MODULE_4__[\"default\"])(component)\n\ncomponent.options.__file = \"wxcomponents/vant/slider/index.vue\"\n/* harmony default export */ __webpack_exports__[\"default\"] = (component.exports);//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbbnVsbF0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQThhO0FBQzlhO0FBQ3lEO0FBQ0w7OztBQUdwRDtBQUN1TDtBQUN2TCxnQkFBZ0IsMkxBQVU7QUFDMUIsRUFBRSwyRUFBTTtBQUNSLEVBQUUsNFlBQU07QUFDUixFQUFFLHFaQUFlO0FBQ2pCO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQSxFQUFFLGdaQUFVO0FBQ1o7QUFDQTs7QUFFQTtBQUNrTDtBQUNsTCxXQUFXLG1NQUFNLGlCQUFpQiwyTUFBTTtBQUMwSTtBQUNsTCxXQUFXLG1NQUFNLGlCQUFpQiwyTUFBTTs7QUFFeEM7QUFDZSxnRiIsImZpbGUiOiIyOS5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IHJlbmRlciwgc3RhdGljUmVuZGVyRm5zLCByZWN5Y2xhYmxlUmVuZGVyLCBjb21wb25lbnRzIH0gZnJvbSBcIi4vaW5kZXgudnVlP3Z1ZSZ0eXBlPXRlbXBsYXRlJmlkPTAwNmRiYjEwJmZpbHRlci1tb2R1bGVzPWV5SjFkR2xzY3lJNmV5SjBlWEJsSWpvaWQzaHpJaXdpWTI5dWRHVnVkQ0k2SWlJc0luTjBZWEowSWpveE16Y3lMQ0poZEhSeWN5STZleUp6Y21NaU9pSXVMaTkzZUhNdmRYUnBiSE11ZDNoeklpd2liVzlrZFd4bElqb2lkWFJwYkhNaWZTd2laVzVrSWpveE16Y3lmU3dpYzNSNWJHVWlPbnNpZEhsd1pTSTZJbmQ0Y3lJc0ltTnZiblJsYm5RaU9pSWlMQ0p6ZEdGeWRDSTZNVFF5TVN3aVlYUjBjbk1pT25zaWMzSmpJam9pTGk0dmQzaHpMM04wZVd4bExuZDRjeUlzSW0xdlpIVnNaU0k2SW5OMGVXeGxJbjBzSW1WdVpDSTZNVFF5TVgxOSZcIlxudmFyIHJlbmRlcmpzXG5pbXBvcnQgc2NyaXB0IGZyb20gXCIuL2luZGV4LnZ1ZT92dWUmdHlwZT1zY3JpcHQmbGFuZz1qcyZcIlxuZXhwb3J0ICogZnJvbSBcIi4vaW5kZXgudnVlP3Z1ZSZ0eXBlPXNjcmlwdCZsYW5nPWpzJlwiXG5cblxuLyogbm9ybWFsaXplIGNvbXBvbmVudCAqL1xuaW1wb3J0IG5vcm1hbGl6ZXIgZnJvbSBcIiEuLi8uLi8uLi8uLi8uLi8uLi9Qcm9ncmFtIEZpbGVzL0hCdWlsZGVyWC9wbHVnaW5zL3VuaWFwcC1jbGkvbm9kZV9tb2R1bGVzL0BkY2xvdWRpby92dWUtY2xpLXBsdWdpbi11bmkvcGFja2FnZXMvdnVlLWxvYWRlci9saWIvcnVudGltZS9jb21wb25lbnROb3JtYWxpemVyLmpzXCJcbnZhciBjb21wb25lbnQgPSBub3JtYWxpemVyKFxuICBzY3JpcHQsXG4gIHJlbmRlcixcbiAgc3RhdGljUmVuZGVyRm5zLFxuICBmYWxzZSxcbiAgbnVsbCxcbiAgbnVsbCxcbiAgbnVsbCxcbiAgZmFsc2UsXG4gIGNvbXBvbmVudHMsXG4gIHJlbmRlcmpzXG4pXG5cbi8qIGN1c3RvbSBibG9ja3MgKi9cbmltcG9ydCBibG9jazAgZnJvbSBcIi4uL3d4cy91dGlscy53eHM/dnVlJnR5cGU9Y3VzdG9tJmluZGV4PTAmYmxvY2tUeXBlPXd4cyZpc3N1ZXJQYXRoPUQlM0ElNUNQcm9qZWN0cyU1Q215JTVDZGVtby11bmktYXBwJTVDd3hjb21wb25lbnRzJTVDdmFudCU1Q3NsaWRlciU1Q2luZGV4LnZ1ZSZtb2R1bGU9dXRpbHNcIlxuaWYgKHR5cGVvZiBibG9jazAgPT09ICdmdW5jdGlvbicpIGJsb2NrMChjb21wb25lbnQpXG5pbXBvcnQgYmxvY2sxIGZyb20gXCIuLi93eHMvc3R5bGUud3hzP3Z1ZSZ0eXBlPWN1c3RvbSZpbmRleD0xJmJsb2NrVHlwZT13eHMmaXNzdWVyUGF0aD1EJTNBJTVDUHJvamVjdHMlNUNteSU1Q2RlbW8tdW5pLWFwcCU1Q3d4Y29tcG9uZW50cyU1Q3ZhbnQlNUNzbGlkZXIlNUNpbmRleC52dWUmbW9kdWxlPXN0eWxlXCJcbmlmICh0eXBlb2YgYmxvY2sxID09PSAnZnVuY3Rpb24nKSBibG9jazEoY29tcG9uZW50KVxuXG5jb21wb25lbnQub3B0aW9ucy5fX2ZpbGUgPSBcInd4Y29tcG9uZW50cy92YW50L3NsaWRlci9pbmRleC52dWVcIlxuZXhwb3J0IGRlZmF1bHQgY29tcG9uZW50LmV4cG9ydHMiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///29\n");
 
 /***/ }),
 /* 30 */
-/*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** D:/Projects/my/customBar/wxcomponents/vant/slider/index.vue?vue&type=template&id=006dbb10&filter-modules=eyJ1dGlscyI6eyJ0eXBlIjoid3hzIiwiY29udGVudCI6IiIsInN0YXJ0IjoxMzcyLCJhdHRycyI6eyJzcmMiOiIuLi93eHMvdXRpbHMud3hzIiwibW9kdWxlIjoidXRpbHMifSwiZW5kIjoxMzcyfSwic3R5bGUiOnsidHlwZSI6Ind4cyIsImNvbnRlbnQiOiIiLCJzdGFydCI6MTQyMSwiYXR0cnMiOnsic3JjIjoiLi4vd3hzL3N0eWxlLnd4cyIsIm1vZHVsZSI6InN0eWxlIn0sImVuZCI6MTQyMX19& ***!
-  \******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*!*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** D:/Projects/my/demo-uni-app/wxcomponents/vant/slider/index.vue?vue&type=template&id=006dbb10&filter-modules=eyJ1dGlscyI6eyJ0eXBlIjoid3hzIiwiY29udGVudCI6IiIsInN0YXJ0IjoxMzcyLCJhdHRycyI6eyJzcmMiOiIuLi93eHMvdXRpbHMud3hzIiwibW9kdWxlIjoidXRpbHMifSwiZW5kIjoxMzcyfSwic3R5bGUiOnsidHlwZSI6Ind4cyIsImNvbnRlbnQiOiIiLCJzdGFydCI6MTQyMSwiYXR0cnMiOnsic3JjIjoiLi4vd3hzL3N0eWxlLnd4cyIsIm1vZHVsZSI6InN0eWxlIn0sImVuZCI6MTQyMX19& ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns, recyclableRender, components */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -1106,9 +1147,9 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 /* 31 */
-/*!**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--10-0!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/filter-modules-template.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/page-meta.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!D:/Projects/my/customBar/wxcomponents/vant/slider/index.vue?vue&type=template&id=006dbb10&filter-modules=eyJ1dGlscyI6eyJ0eXBlIjoid3hzIiwiY29udGVudCI6IiIsInN0YXJ0IjoxMzcyLCJhdHRycyI6eyJzcmMiOiIuLi93eHMvdXRpbHMud3hzIiwibW9kdWxlIjoidXRpbHMifSwiZW5kIjoxMzcyfSwic3R5bGUiOnsidHlwZSI6Ind4cyIsImNvbnRlbnQiOiIiLCJzdGFydCI6MTQyMSwiYXR0cnMiOnsic3JjIjoiLi4vd3hzL3N0eWxlLnd4cyIsIm1vZHVsZSI6InN0eWxlIn0sImVuZCI6MTQyMX19& ***!
-  \**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*!*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--10-0!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/filter-modules-template.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/page-meta.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!D:/Projects/my/demo-uni-app/wxcomponents/vant/slider/index.vue?vue&type=template&id=006dbb10&filter-modules=eyJ1dGlscyI6eyJ0eXBlIjoid3hzIiwiY29udGVudCI6IiIsInN0YXJ0IjoxMzcyLCJhdHRycyI6eyJzcmMiOiIuLi93eHMvdXRpbHMud3hzIiwibW9kdWxlIjoidXRpbHMifSwiZW5kIjoxMzcyfSwic3R5bGUiOnsidHlwZSI6Ind4cyIsImNvbnRlbnQiOiIiLCJzdGFydCI6MTQyMSwiYXR0cnMiOnsic3JjIjoiLi4vd3hzL3N0eWxlLnd4cyIsIm1vZHVsZSI6InN0eWxlIn0sImVuZCI6MTQyMX19& ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns, recyclableRender, components */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -1281,9 +1322,9 @@ render._withStripped = true
 
 /***/ }),
 /* 32 */
-/*!********************************************************************************************!*\
-  !*** D:/Projects/my/customBar/wxcomponents/vant/slider/index.vue?vue&type=script&lang=js& ***!
-  \********************************************************************************************/
+/*!***********************************************************************************************!*\
+  !*** D:/Projects/my/demo-uni-app/wxcomponents/vant/slider/index.vue?vue&type=script&lang=js& ***!
+  \***********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -1292,9 +1333,9 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _Pro
 
 /***/ }),
 /* 33 */
-/*!*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--6-1!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/using-components.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!D:/Projects/my/customBar/wxcomponents/vant/slider/index.vue?vue&type=script&lang=js& ***!
-  \*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*!****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--6-1!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/using-components.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!D:/Projects/my/demo-uni-app/wxcomponents/vant/slider/index.vue?vue&type=script&lang=js& ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1333,9 +1374,9 @@ module.exports = g;
 
 /***/ }),
 /* 35 */
-/*!**********************************************************************!*\
-  !*** D:/Projects/my/customBar/wxcomponents/vant/common/component.js ***!
-  \**********************************************************************/
+/*!*************************************************************************!*\
+  !*** D:/Projects/my/demo-uni-app/wxcomponents/vant/common/component.js ***!
+  \*************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2180,9 +2221,9 @@ module.exports = Vue;
 
 /***/ }),
 /* 38 */
-/*!******************************************************************!*\
-  !*** D:/Projects/my/customBar/wxcomponents/vant/mixins/basic.js ***!
-  \******************************************************************/
+/*!*********************************************************************!*\
+  !*** D:/Projects/my/demo-uni-app/wxcomponents/vant/mixins/basic.js ***!
+  \*********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2191,9 +2232,9 @@ eval("/* WEBPACK VAR INJECTION */(function(Behavior, __webpack_provided_wx_dot_n
 
 /***/ }),
 /* 39 */
-/*!******************************************************************!*\
-  !*** D:/Projects/my/customBar/wxcomponents/vant/mixins/touch.js ***!
-  \******************************************************************/
+/*!*********************************************************************!*\
+  !*** D:/Projects/my/demo-uni-app/wxcomponents/vant/mixins/touch.js ***!
+  \*********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2202,9 +2243,9 @@ eval("/* WEBPACK VAR INJECTION */(function(Behavior) {Object.defineProperty(expo
 
 /***/ }),
 /* 40 */
-/*!********************************************************************!*\
-  !*** D:/Projects/my/customBar/wxcomponents/vant/common/version.js ***!
-  \********************************************************************/
+/*!***********************************************************************!*\
+  !*** D:/Projects/my/demo-uni-app/wxcomponents/vant/common/version.js ***!
+  \***********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2213,9 +2254,9 @@ eval("/* WEBPACK VAR INJECTION */(function(wx) {Object.defineProperty(exports, \
 
 /***/ }),
 /* 41 */
-/*!******************************************************************!*\
-  !*** D:/Projects/my/customBar/wxcomponents/vant/common/utils.js ***!
-  \******************************************************************/
+/*!*********************************************************************!*\
+  !*** D:/Projects/my/demo-uni-app/wxcomponents/vant/common/utils.js ***!
+  \*********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2224,9 +2265,9 @@ eval("/* WEBPACK VAR INJECTION */(function(__webpack_provided_wx_dot_nextTick, w
 
 /***/ }),
 /* 42 */
-/*!**********************************************************************!*\
-  !*** D:/Projects/my/customBar/wxcomponents/vant/common/validator.js ***!
-  \**********************************************************************/
+/*!*************************************************************************!*\
+  !*** D:/Projects/my/demo-uni-app/wxcomponents/vant/common/validator.js ***!
+  \*************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2235,20 +2276,20 @@ eval("Object.defineProperty(exports, \"__esModule\", { value: true });exports.is
 
 /***/ }),
 /* 43 */
-/*!**********************************************************************************************************************************************************************************************************!*\
-  !*** D:/Projects/my/customBar/wxcomponents/vant/wxs/utils.wxs?vue&type=custom&index=0&blockType=wxs&issuerPath=D%3A%5CProjects%5Cmy%5CcustomBar%5Cwxcomponents%5Cvant%5Cslider%5Cindex.vue&module=utils ***!
-  \**********************************************************************************************************************************************************************************************************/
+/*!****************************************************************************************************************************************************************************************************************!*\
+  !*** D:/Projects/my/demo-uni-app/wxcomponents/vant/wxs/utils.wxs?vue&type=custom&index=0&blockType=wxs&issuerPath=D%3A%5CProjects%5Cmy%5Cdemo-uni-app%5Cwxcomponents%5Cvant%5Cslider%5Cindex.vue&module=utils ***!
+  \****************************************************************************************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _Program_Files_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_filter_loader_index_js_utils_wxs_vue_type_custom_index_0_blockType_wxs_issuerPath_D_3A_5CProjects_5Cmy_5CcustomBar_5Cwxcomponents_5Cvant_5Cslider_5Cindex_vue_module_utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../Program Files/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-filter-loader!./utils.wxs?vue&type=custom&index=0&blockType=wxs&issuerPath=D%3A%5CProjects%5Cmy%5CcustomBar%5Cwxcomponents%5Cvant%5Cslider%5Cindex.vue&module=utils */ 44);\n/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__[\"default\"] = (_Program_Files_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_filter_loader_index_js_utils_wxs_vue_type_custom_index_0_blockType_wxs_issuerPath_D_3A_5CProjects_5Cmy_5CcustomBar_5Cwxcomponents_5Cvant_5Cslider_5Cindex_vue_module_utils__WEBPACK_IMPORTED_MODULE_0__[\"default\"]); //# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbbnVsbF0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0FBQUE7QUFBQSx3Q0FBNlQsQ0FBZ0IsMlhBQUcsRUFBQyIsImZpbGUiOiI0My5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBtb2QgZnJvbSBcIi0hLi4vLi4vLi4vLi4vLi4vLi4vUHJvZ3JhbSBGaWxlcy9IQnVpbGRlclgvcGx1Z2lucy91bmlhcHAtY2xpL25vZGVfbW9kdWxlcy9AZGNsb3VkaW8vdnVlLWNsaS1wbHVnaW4tdW5pL3BhY2thZ2VzL3dlYnBhY2stdW5pLWZpbHRlci1sb2FkZXIvaW5kZXguanMhLi91dGlscy53eHM/dnVlJnR5cGU9Y3VzdG9tJmluZGV4PTAmYmxvY2tUeXBlPXd4cyZpc3N1ZXJQYXRoPUQlM0ElNUNQcm9qZWN0cyU1Q215JTVDY3VzdG9tQmFyJTVDd3hjb21wb25lbnRzJTVDdmFudCU1Q3NsaWRlciU1Q2luZGV4LnZ1ZSZtb2R1bGU9dXRpbHNcIjsgZXhwb3J0IGRlZmF1bHQgbW9kOyBleHBvcnQgKiBmcm9tIFwiLSEuLi8uLi8uLi8uLi8uLi8uLi9Qcm9ncmFtIEZpbGVzL0hCdWlsZGVyWC9wbHVnaW5zL3VuaWFwcC1jbGkvbm9kZV9tb2R1bGVzL0BkY2xvdWRpby92dWUtY2xpLXBsdWdpbi11bmkvcGFja2FnZXMvd2VicGFjay11bmktZmlsdGVyLWxvYWRlci9pbmRleC5qcyEuL3V0aWxzLnd4cz92dWUmdHlwZT1jdXN0b20maW5kZXg9MCZibG9ja1R5cGU9d3hzJmlzc3VlclBhdGg9RCUzQSU1Q1Byb2plY3RzJTVDbXklNUNjdXN0b21CYXIlNUN3eGNvbXBvbmVudHMlNUN2YW50JTVDc2xpZGVyJTVDaW5kZXgudnVlJm1vZHVsZT11dGlsc1wiIl0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///43\n");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _Program_Files_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_filter_loader_index_js_utils_wxs_vue_type_custom_index_0_blockType_wxs_issuerPath_D_3A_5CProjects_5Cmy_5Cdemo_uni_app_5Cwxcomponents_5Cvant_5Cslider_5Cindex_vue_module_utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../Program Files/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-filter-loader!./utils.wxs?vue&type=custom&index=0&blockType=wxs&issuerPath=D%3A%5CProjects%5Cmy%5Cdemo-uni-app%5Cwxcomponents%5Cvant%5Cslider%5Cindex.vue&module=utils */ 44);\n/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__[\"default\"] = (_Program_Files_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_filter_loader_index_js_utils_wxs_vue_type_custom_index_0_blockType_wxs_issuerPath_D_3A_5CProjects_5Cmy_5Cdemo_uni_app_5Cwxcomponents_5Cvant_5Cslider_5Cindex_vue_module_utils__WEBPACK_IMPORTED_MODULE_0__[\"default\"]); //# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbbnVsbF0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0FBQUE7QUFBQSx3Q0FBZ1UsQ0FBZ0IsOFhBQUcsRUFBQyIsImZpbGUiOiI0My5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBtb2QgZnJvbSBcIi0hLi4vLi4vLi4vLi4vLi4vLi4vUHJvZ3JhbSBGaWxlcy9IQnVpbGRlclgvcGx1Z2lucy91bmlhcHAtY2xpL25vZGVfbW9kdWxlcy9AZGNsb3VkaW8vdnVlLWNsaS1wbHVnaW4tdW5pL3BhY2thZ2VzL3dlYnBhY2stdW5pLWZpbHRlci1sb2FkZXIvaW5kZXguanMhLi91dGlscy53eHM/dnVlJnR5cGU9Y3VzdG9tJmluZGV4PTAmYmxvY2tUeXBlPXd4cyZpc3N1ZXJQYXRoPUQlM0ElNUNQcm9qZWN0cyU1Q215JTVDZGVtby11bmktYXBwJTVDd3hjb21wb25lbnRzJTVDdmFudCU1Q3NsaWRlciU1Q2luZGV4LnZ1ZSZtb2R1bGU9dXRpbHNcIjsgZXhwb3J0IGRlZmF1bHQgbW9kOyBleHBvcnQgKiBmcm9tIFwiLSEuLi8uLi8uLi8uLi8uLi8uLi9Qcm9ncmFtIEZpbGVzL0hCdWlsZGVyWC9wbHVnaW5zL3VuaWFwcC1jbGkvbm9kZV9tb2R1bGVzL0BkY2xvdWRpby92dWUtY2xpLXBsdWdpbi11bmkvcGFja2FnZXMvd2VicGFjay11bmktZmlsdGVyLWxvYWRlci9pbmRleC5qcyEuL3V0aWxzLnd4cz92dWUmdHlwZT1jdXN0b20maW5kZXg9MCZibG9ja1R5cGU9d3hzJmlzc3VlclBhdGg9RCUzQSU1Q1Byb2plY3RzJTVDbXklNUNkZW1vLXVuaS1hcHAlNUN3eGNvbXBvbmVudHMlNUN2YW50JTVDc2xpZGVyJTVDaW5kZXgudnVlJm1vZHVsZT11dGlsc1wiIl0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///43\n");
 
 /***/ }),
 /* 44 */
-/*!*****************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-filter-loader!D:/Projects/my/customBar/wxcomponents/vant/wxs/utils.wxs?vue&type=custom&index=0&blockType=wxs&issuerPath=D%3A%5CProjects%5Cmy%5CcustomBar%5Cwxcomponents%5Cvant%5Cslider%5Cindex.vue&module=utils ***!
-  \*****************************************************************************************************************************************************************************************************************************************************************************************/
+/*!***********************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-filter-loader!D:/Projects/my/demo-uni-app/wxcomponents/vant/wxs/utils.wxs?vue&type=custom&index=0&blockType=wxs&issuerPath=D%3A%5CProjects%5Cmy%5Cdemo-uni-app%5Cwxcomponents%5Cvant%5Cslider%5Cindex.vue&module=utils ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -2257,9 +2298,9 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 
 /***/ }),
 /* 45 */
-/*!**************************************************************!*\
-  !*** D:/Projects/my/customBar/wxcomponents/vant/wxs/bem.wxs ***!
-  \**************************************************************/
+/*!*****************************************************************!*\
+  !*** D:/Projects/my/demo-uni-app/wxcomponents/vant/wxs/bem.wxs ***!
+  \*****************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2267,9 +2308,9 @@ eval("/* eslint-disable */\nvar array = __webpack_require__(/*! ./array.wxs */ 4
 
 /***/ }),
 /* 46 */
-/*!****************************************************************!*\
-  !*** D:/Projects/my/customBar/wxcomponents/vant/wxs/array.wxs ***!
-  \****************************************************************/
+/*!*******************************************************************!*\
+  !*** D:/Projects/my/demo-uni-app/wxcomponents/vant/wxs/array.wxs ***!
+  \*******************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -2277,9 +2318,9 @@ eval("function isArray(array) {\n  return array && (array.constructor === 'Array
 
 /***/ }),
 /* 47 */
-/*!*****************************************************************!*\
-  !*** D:/Projects/my/customBar/wxcomponents/vant/wxs/object.wxs ***!
-  \*****************************************************************/
+/*!********************************************************************!*\
+  !*** D:/Projects/my/demo-uni-app/wxcomponents/vant/wxs/object.wxs ***!
+  \********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2314,9 +2355,9 @@ function getDate() {
 
 /***/ }),
 /* 49 */
-/*!******************************************************************!*\
-  !*** D:/Projects/my/customBar/wxcomponents/vant/wxs/memoize.wxs ***!
-  \******************************************************************/
+/*!*********************************************************************!*\
+  !*** D:/Projects/my/demo-uni-app/wxcomponents/vant/wxs/memoize.wxs ***!
+  \*********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -2324,9 +2365,9 @@ eval("/**\n * Simple memoize\n * wxs doesn't support fn.apply, so this memoize o
 
 /***/ }),
 /* 50 */
-/*!*******************************************************************!*\
-  !*** D:/Projects/my/customBar/wxcomponents/vant/wxs/add-unit.wxs ***!
-  \*******************************************************************/
+/*!**********************************************************************!*\
+  !*** D:/Projects/my/demo-uni-app/wxcomponents/vant/wxs/add-unit.wxs ***!
+  \**********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2334,20 +2375,20 @@ eval("/* WEBPACK VAR INJECTION */(function(getRegExp) {/* eslint-disable */\nvar
 
 /***/ }),
 /* 51 */
-/*!**********************************************************************************************************************************************************************************************************!*\
-  !*** D:/Projects/my/customBar/wxcomponents/vant/wxs/style.wxs?vue&type=custom&index=1&blockType=wxs&issuerPath=D%3A%5CProjects%5Cmy%5CcustomBar%5Cwxcomponents%5Cvant%5Cslider%5Cindex.vue&module=style ***!
-  \**********************************************************************************************************************************************************************************************************/
+/*!****************************************************************************************************************************************************************************************************************!*\
+  !*** D:/Projects/my/demo-uni-app/wxcomponents/vant/wxs/style.wxs?vue&type=custom&index=1&blockType=wxs&issuerPath=D%3A%5CProjects%5Cmy%5Cdemo-uni-app%5Cwxcomponents%5Cvant%5Cslider%5Cindex.vue&module=style ***!
+  \****************************************************************************************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _Program_Files_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_filter_loader_index_js_style_wxs_vue_type_custom_index_1_blockType_wxs_issuerPath_D_3A_5CProjects_5Cmy_5CcustomBar_5Cwxcomponents_5Cvant_5Cslider_5Cindex_vue_module_style__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../Program Files/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-filter-loader!./style.wxs?vue&type=custom&index=1&blockType=wxs&issuerPath=D%3A%5CProjects%5Cmy%5CcustomBar%5Cwxcomponents%5Cvant%5Cslider%5Cindex.vue&module=style */ 52);\n/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__[\"default\"] = (_Program_Files_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_filter_loader_index_js_style_wxs_vue_type_custom_index_1_blockType_wxs_issuerPath_D_3A_5CProjects_5Cmy_5CcustomBar_5Cwxcomponents_5Cvant_5Cslider_5Cindex_vue_module_style__WEBPACK_IMPORTED_MODULE_0__[\"default\"]); //# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbbnVsbF0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0FBQUE7QUFBQSx3Q0FBNlQsQ0FBZ0IsMlhBQUcsRUFBQyIsImZpbGUiOiI1MS5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBtb2QgZnJvbSBcIi0hLi4vLi4vLi4vLi4vLi4vLi4vUHJvZ3JhbSBGaWxlcy9IQnVpbGRlclgvcGx1Z2lucy91bmlhcHAtY2xpL25vZGVfbW9kdWxlcy9AZGNsb3VkaW8vdnVlLWNsaS1wbHVnaW4tdW5pL3BhY2thZ2VzL3dlYnBhY2stdW5pLWZpbHRlci1sb2FkZXIvaW5kZXguanMhLi9zdHlsZS53eHM/dnVlJnR5cGU9Y3VzdG9tJmluZGV4PTEmYmxvY2tUeXBlPXd4cyZpc3N1ZXJQYXRoPUQlM0ElNUNQcm9qZWN0cyU1Q215JTVDY3VzdG9tQmFyJTVDd3hjb21wb25lbnRzJTVDdmFudCU1Q3NsaWRlciU1Q2luZGV4LnZ1ZSZtb2R1bGU9c3R5bGVcIjsgZXhwb3J0IGRlZmF1bHQgbW9kOyBleHBvcnQgKiBmcm9tIFwiLSEuLi8uLi8uLi8uLi8uLi8uLi9Qcm9ncmFtIEZpbGVzL0hCdWlsZGVyWC9wbHVnaW5zL3VuaWFwcC1jbGkvbm9kZV9tb2R1bGVzL0BkY2xvdWRpby92dWUtY2xpLXBsdWdpbi11bmkvcGFja2FnZXMvd2VicGFjay11bmktZmlsdGVyLWxvYWRlci9pbmRleC5qcyEuL3N0eWxlLnd4cz92dWUmdHlwZT1jdXN0b20maW5kZXg9MSZibG9ja1R5cGU9d3hzJmlzc3VlclBhdGg9RCUzQSU1Q1Byb2plY3RzJTVDbXklNUNjdXN0b21CYXIlNUN3eGNvbXBvbmVudHMlNUN2YW50JTVDc2xpZGVyJTVDaW5kZXgudnVlJm1vZHVsZT1zdHlsZVwiIl0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///51\n");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _Program_Files_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_filter_loader_index_js_style_wxs_vue_type_custom_index_1_blockType_wxs_issuerPath_D_3A_5CProjects_5Cmy_5Cdemo_uni_app_5Cwxcomponents_5Cvant_5Cslider_5Cindex_vue_module_style__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../Program Files/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-filter-loader!./style.wxs?vue&type=custom&index=1&blockType=wxs&issuerPath=D%3A%5CProjects%5Cmy%5Cdemo-uni-app%5Cwxcomponents%5Cvant%5Cslider%5Cindex.vue&module=style */ 52);\n/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__[\"default\"] = (_Program_Files_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_filter_loader_index_js_style_wxs_vue_type_custom_index_1_blockType_wxs_issuerPath_D_3A_5CProjects_5Cmy_5Cdemo_uni_app_5Cwxcomponents_5Cvant_5Cslider_5Cindex_vue_module_style__WEBPACK_IMPORTED_MODULE_0__[\"default\"]); //# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbbnVsbF0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0FBQUE7QUFBQSx3Q0FBZ1UsQ0FBZ0IsOFhBQUcsRUFBQyIsImZpbGUiOiI1MS5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBtb2QgZnJvbSBcIi0hLi4vLi4vLi4vLi4vLi4vLi4vUHJvZ3JhbSBGaWxlcy9IQnVpbGRlclgvcGx1Z2lucy91bmlhcHAtY2xpL25vZGVfbW9kdWxlcy9AZGNsb3VkaW8vdnVlLWNsaS1wbHVnaW4tdW5pL3BhY2thZ2VzL3dlYnBhY2stdW5pLWZpbHRlci1sb2FkZXIvaW5kZXguanMhLi9zdHlsZS53eHM/dnVlJnR5cGU9Y3VzdG9tJmluZGV4PTEmYmxvY2tUeXBlPXd4cyZpc3N1ZXJQYXRoPUQlM0ElNUNQcm9qZWN0cyU1Q215JTVDZGVtby11bmktYXBwJTVDd3hjb21wb25lbnRzJTVDdmFudCU1Q3NsaWRlciU1Q2luZGV4LnZ1ZSZtb2R1bGU9c3R5bGVcIjsgZXhwb3J0IGRlZmF1bHQgbW9kOyBleHBvcnQgKiBmcm9tIFwiLSEuLi8uLi8uLi8uLi8uLi8uLi9Qcm9ncmFtIEZpbGVzL0hCdWlsZGVyWC9wbHVnaW5zL3VuaWFwcC1jbGkvbm9kZV9tb2R1bGVzL0BkY2xvdWRpby92dWUtY2xpLXBsdWdpbi11bmkvcGFja2FnZXMvd2VicGFjay11bmktZmlsdGVyLWxvYWRlci9pbmRleC5qcyEuL3N0eWxlLnd4cz92dWUmdHlwZT1jdXN0b20maW5kZXg9MSZibG9ja1R5cGU9d3hzJmlzc3VlclBhdGg9RCUzQSU1Q1Byb2plY3RzJTVDbXklNUNkZW1vLXVuaS1hcHAlNUN3eGNvbXBvbmVudHMlNUN2YW50JTVDc2xpZGVyJTVDaW5kZXgudnVlJm1vZHVsZT1zdHlsZVwiIl0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///51\n");
 
 /***/ }),
 /* 52 */
-/*!*****************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-filter-loader!D:/Projects/my/customBar/wxcomponents/vant/wxs/style.wxs?vue&type=custom&index=1&blockType=wxs&issuerPath=D%3A%5CProjects%5Cmy%5CcustomBar%5Cwxcomponents%5Cvant%5Cslider%5Cindex.vue&module=style ***!
-  \*****************************************************************************************************************************************************************************************************************************************************************************************/
+/*!***********************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-filter-loader!D:/Projects/my/demo-uni-app/wxcomponents/vant/wxs/style.wxs?vue&type=custom&index=1&blockType=wxs&issuerPath=D%3A%5CProjects%5Cmy%5Cdemo-uni-app%5Cwxcomponents%5Cvant%5Cslider%5Cindex.vue&module=style ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -2356,9 +2397,9 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* WEBPACK VAR INJECTION */(f
 
 /***/ }),
 /* 53 */
-/*!****************************************!*\
-  !*** D:/Projects/my/customBar/App.vue ***!
-  \****************************************/
+/*!*******************************************!*\
+  !*** D:/Projects/my/demo-uni-app/App.vue ***!
+  \*******************************************/
 /*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -2367,9 +2408,9 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _App
 
 /***/ }),
 /* 54 */
-/*!*****************************************************************!*\
-  !*** D:/Projects/my/customBar/App.vue?vue&type=script&lang=js& ***!
-  \*****************************************************************/
+/*!********************************************************************!*\
+  !*** D:/Projects/my/demo-uni-app/App.vue?vue&type=script&lang=js& ***!
+  \********************************************************************/
 /*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -2378,20 +2419,20 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _Pro
 
 /***/ }),
 /* 55 */
-/*!**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--6-1!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/using-components.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!D:/Projects/my/customBar/App.vue?vue&type=script&lang=js& ***!
-  \**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*!*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--6-1!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/using-components.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!D:/Projects/my/demo-uni-app/App.vue?vue&type=script&lang=js& ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("/* WEBPACK VAR INJECTION */(function(__f__) {Object.defineProperty(exports, \"__esModule\", { value: true });exports.default = void 0;var _default =\n{\n  onLaunch: function onLaunch() {\n    __f__(\"log\", 'App Launch', \" at App.vue:4\");\n  },\n  onShow: function onShow() {\n    __f__(\"log\", 'App Show', \" at App.vue:7\");\n  },\n  onHide: function onHide() {\n    __f__(\"log\", 'App Hide', \" at App.vue:10\");\n  } };exports.default = _default;\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/vue-cli-plugin-uni/lib/format-log.js */ 7)[\"default\"]))//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInVuaS1hcHA6Ly8vQXBwLnZ1ZSJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiO0FBQ0E7QUFDQTtBQUNBO0FBQ0EsR0FIQTtBQUlBO0FBQ0E7QUFDQSxHQU5BO0FBT0E7QUFDQTtBQUNBLEdBVEEsRSIsImZpbGUiOiI1NS5qcyIsInNvdXJjZXNDb250ZW50IjpbIjxzY3JpcHQ+XHJcblx0ZXhwb3J0IGRlZmF1bHQge1xyXG5cdFx0b25MYXVuY2g6IGZ1bmN0aW9uKCkge1xyXG5cdFx0XHRjb25zb2xlLmxvZygnQXBwIExhdW5jaCcpXHJcblx0XHR9LFxyXG5cdFx0b25TaG93OiBmdW5jdGlvbigpIHtcclxuXHRcdFx0Y29uc29sZS5sb2coJ0FwcCBTaG93JylcclxuXHRcdH0sXHJcblx0XHRvbkhpZGU6IGZ1bmN0aW9uKCkge1xyXG5cdFx0XHRjb25zb2xlLmxvZygnQXBwIEhpZGUnKVxyXG5cdFx0fVxyXG5cdH1cclxuPC9zY3JpcHQ+XHJcblxyXG48c3R5bGU+XHJcblx0Lyrmr4/kuKrpobXpnaLlhazlhbFjc3MgKi9cclxuXHRAaW1wb3J0IFwiL3d4Y29tcG9uZW50cy92YW50L2NvbW1vbi9pbmRleC53eHNzXCJcclxuPC9zdHlsZT5cbiJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///55\n");
+eval("/* WEBPACK VAR INJECTION */(function(__f__) {Object.defineProperty(exports, \"__esModule\", { value: true });exports.default = void 0;var _default =\n{\n  onLaunch: function onLaunch() {\n    __f__(\"log\", 'App Launch', \" at App.vue:4\");\n  },\n  onShow: function onShow() {\n    __f__(\"log\", 'App Show', \" at App.vue:7\");\n  },\n  onHide: function onHide() {\n    __f__(\"log\", 'App Hide', \" at App.vue:10\");\n  } };exports.default = _default;\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/vue-cli-plugin-uni/lib/format-log.js */ 7)[\"default\"]))//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInVuaS1hcHA6Ly8vQXBwLnZ1ZSJdLCJuYW1lcyI6WyJvbkxhdW5jaCIsIm9uU2hvdyIsIm9uSGlkZSJdLCJtYXBwaW5ncyI6IjtBQUNlO0FBQ2RBLFVBQVEsRUFBRSxvQkFBVztBQUNwQixpQkFBWSxZQUFaO0FBQ0EsR0FIYTtBQUlkQyxRQUFNLEVBQUUsa0JBQVc7QUFDbEIsaUJBQVksVUFBWjtBQUNBLEdBTmE7QUFPZEMsUUFBTSxFQUFFLGtCQUFXO0FBQ2xCLGlCQUFZLFVBQVo7QUFDQSxHQVRhLEUiLCJmaWxlIjoiNTUuanMiLCJzb3VyY2VzQ29udGVudCI6WyJcbmV4cG9ydCBkZWZhdWx0IHtcblx0b25MYXVuY2g6IGZ1bmN0aW9uKCkge1xuXHRcdGNvbnNvbGUubG9nKCdBcHAgTGF1bmNoJylcblx0fSxcblx0b25TaG93OiBmdW5jdGlvbigpIHtcblx0XHRjb25zb2xlLmxvZygnQXBwIFNob3cnKVxuXHR9LFxuXHRvbkhpZGU6IGZ1bmN0aW9uKCkge1xuXHRcdGNvbnNvbGUubG9nKCdBcHAgSGlkZScpXG5cdH1cbn1cbiJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///55\n");
 
 /***/ }),
 /* 56 */
-/*!*************************************************************!*\
-  !*** D:/Projects/my/customBar/components/custom-tabbar.vue ***!
-  \*************************************************************/
+/*!****************************************************************!*\
+  !*** D:/Projects/my/demo-uni-app/components/custom-tabbar.vue ***!
+  \****************************************************************/
 /*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -2400,9 +2441,9 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _cus
 
 /***/ }),
 /* 57 */
-/*!********************************************************************************************!*\
-  !*** D:/Projects/my/customBar/components/custom-tabbar.vue?vue&type=template&id=da768fe2& ***!
-  \********************************************************************************************/
+/*!***********************************************************************************************!*\
+  !*** D:/Projects/my/demo-uni-app/components/custom-tabbar.vue?vue&type=template&id=da768fe2& ***!
+  \***********************************************************************************************/
 /*! exports provided: render, staticRenderFns, recyclableRender, components */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -2421,9 +2462,9 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 /* 58 */
-/*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--10-0!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/filter-modules-template.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/page-meta.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!D:/Projects/my/customBar/components/custom-tabbar.vue?vue&type=template&id=da768fe2& ***!
-  \************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*!***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--10-0!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/filter-modules-template.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/page-meta.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!D:/Projects/my/demo-uni-app/components/custom-tabbar.vue?vue&type=template&id=da768fe2& ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns, recyclableRender, components */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -2521,9 +2562,9 @@ render._withStripped = true
 
 /***/ }),
 /* 59 */
-/*!**************************************************************************************!*\
-  !*** D:/Projects/my/customBar/components/custom-tabbar.vue?vue&type=script&lang=js& ***!
-  \**************************************************************************************/
+/*!*****************************************************************************************!*\
+  !*** D:/Projects/my/demo-uni-app/components/custom-tabbar.vue?vue&type=script&lang=js& ***!
+  \*****************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -2532,9 +2573,9 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _Pro
 
 /***/ }),
 /* 60 */
-/*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--6-1!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/using-components.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!D:/Projects/my/customBar/components/custom-tabbar.vue?vue&type=script&lang=js& ***!
-  \*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*!**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--6-1!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/using-components.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!D:/Projects/my/demo-uni-app/components/custom-tabbar.vue?vue&type=script&lang=js& ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
