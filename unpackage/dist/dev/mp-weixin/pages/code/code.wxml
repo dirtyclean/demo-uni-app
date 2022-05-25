@@ -1,0 +1,1 @@
+<view><view>二维码</view><custom-tabbar vue-id="a4b956c0-1" current-page="{{2}}" bind:__l="__l"></custom-tabbar></view>

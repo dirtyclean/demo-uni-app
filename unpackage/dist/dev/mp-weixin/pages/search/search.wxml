@@ -1,0 +1,1 @@
+<view><view>探索</view><custom-tabbar vue-id="50cad900-1" current-page="{{3}}" bind:__l="__l"></custom-tabbar></view>
